@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "vs_buggy",
-  "version": "1.1.0-beta.6",
+  "version": "1.0.0-beta.1",
   "name": "VS Buggy Mod",
   "description": "Basically Archimedes Ships, but with VS2 as the backend!",
   "authors": [

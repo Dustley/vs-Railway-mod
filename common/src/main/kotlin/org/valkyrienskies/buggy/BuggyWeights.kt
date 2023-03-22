@@ -18,14 +18,13 @@ object BuggyWeights : BlockStateInfoProvider {
     }
 
     override fun getBlockStateType(blockState: BlockState): BlockType? {
-        if (blockState.block == BuggyBlocks.BEARING_TOP.get())
+        if (blockState.block == BuggyBlocks.MECHANICAL_TOP.get())
             return vsCore.blockTypes.air
 
         return null
     }
 
     fun register() {
-        Registry.register(BlockStateInfo.REGISTRY, ResourceLocation(BuggyMod.MOD_ID, "bearing"), BuggyWeights)
         Registry.register(BlockStateInfo.REGISTRY, ResourceLocation(BuggyMod.MOD_ID, "bearing"), BuggyWeights)
     }
 }
