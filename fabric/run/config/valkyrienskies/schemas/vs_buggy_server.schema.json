@@ -1,0 +1,28 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "TreadClimb" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The Force a Tread will output when moving up a block"
+    },
+    "TreadSpeed" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The Force a Tread will output when moving"
+    },
+    "blockBlacklist" : {
+      "description" : "Blacklist of blocks that don't get assembled",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "description" : "Blacklist of blocks that don't get assembled"
+      }
+    },
+    "$schema" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : false
+}

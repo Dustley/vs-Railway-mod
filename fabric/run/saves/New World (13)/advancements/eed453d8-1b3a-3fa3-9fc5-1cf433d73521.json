@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/redstone/redstone": {
+    "criteria": {
+      "has_redstone_block": "2023-03-17 23:52:35 -0400"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2023-03-17 23:52:33 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:jungle": "2023-03-17 23:52:21 -0400"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}

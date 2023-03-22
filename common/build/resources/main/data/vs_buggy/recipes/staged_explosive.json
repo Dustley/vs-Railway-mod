@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iVi",
+        "VRV",
+        "iVi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "V": {
+            "item": "vs_buggy:instantexplosive_big"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "vs_buggy:stagedexplosive",
+        "count": 1
+    }
+}

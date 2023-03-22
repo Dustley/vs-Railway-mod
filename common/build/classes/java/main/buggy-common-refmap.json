@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "org/valkyrienskies/buggy/mixin/client/MixinDebugRenderer": {
+      "render": "Lnet/minecraft/class_863;method_23099(Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;DDD)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "org/valkyrienskies/buggy/mixin/client/MixinDebugRenderer": {
+        "render": "Lnet/minecraft/class_863;method_23099(Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;DDD)V"
+      }
+    }
+  }
+}

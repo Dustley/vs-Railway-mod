@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "org.valkyrienskies.buggy.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "client.MixinDebugRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

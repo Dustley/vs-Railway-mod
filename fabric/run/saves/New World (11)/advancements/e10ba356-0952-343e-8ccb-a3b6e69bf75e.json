@@ -1,0 +1,28 @@
+{
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2023-03-17 00:44:49 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2023-03-17 00:44:49 -0400"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2023-03-17 00:44:49 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:birch_forest": "2023-03-17 00:44:27 -0400",
+      "minecraft:forest": "2023-03-17 00:44:43 -0400"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}

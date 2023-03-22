@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "vs_buggy",
+  "version": "1.1.0-beta.6",
+  "name": "VS Buggy Mod",
+  "description": "Basically Archimedes Ships, but with VS2 as the backend!",
+  "authors": [
+    "ConstantDust"
+  ],
+  "contributors": [
+    "Tri0de",
+    "M_Marvin"
+  ],
+  "contact": {
+    "homepage": "https://valkyrienskies.org/",
+    "sources": "https://github.com/ValkyrienSkies/Buggy"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/vs_buggy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.valkyrienskies.buggy.fabric.BuggyModFabric"
+    ],
+    "client": [
+      "org.valkyrienskies.buggy.fabric.BuggyModFabric$Client"
+    ],
+    "preLaunch": [
+      "org.valkyrienskies.buggy.fabric.ValkyrienPreLaunch"
+    ],
+    "modmenu": [
+      "org.valkyrienskies.buggy.fabric.BuggyModFabric$ModMenu"
+    ]
+  },
+  "mixins": [
+    "vs_buggy-common.mixins.json",
+    "vs_buggy.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=1.18.2",
+    "valkyrienskies": ">=2.1.0-beta.10"
+  }
+}
