@@ -15,6 +15,7 @@ import net.minecraft.world.level.material.Material
 import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
 import org.valkyrienskies.buggy.blockentity.bearing.BearingBlockEntity
+import org.valkyrienskies.buggy.blockentity.springs.SpringBlockEntity
 import org.valkyrienskies.buggy.util.DirectionalShape
 import org.valkyrienskies.buggy.util.RotShapes
 
@@ -32,7 +33,7 @@ class SpringBaseBlock : BaseEntityBlock(Properties.of(Material.BAMBOO)) {
         builder.add(BlockStateProperties.FACING)
     }
 
-    override fun newBlockEntity(pos: BlockPos, state: BlockState): BlockEntity = BearingBlockEntity(pos, state)
+    override fun newBlockEntity(pos: BlockPos, state: BlockState): BlockEntity = SpringBlockEntity(pos, state)
 
     override fun getRenderShape(blockState: BlockState): RenderShape {
         return RenderShape.MODEL
@@ -48,7 +49,7 @@ class SpringBaseBlock : BaseEntityBlock(Properties.of(Material.BAMBOO)) {
         if (level.isClientSide) return
         level as ServerLevel
 
-        val be = level.getBlockEntity(pos) as BearingBlockEntity
+        val be = level.getBlockEntity(pos) as SpringBlockEntity
         be.makeTop()
     }
 

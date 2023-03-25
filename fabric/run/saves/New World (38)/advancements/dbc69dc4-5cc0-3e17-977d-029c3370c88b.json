@@ -1,0 +1,21 @@
+{
+  "create:root": {
+    "criteria": {
+      "0": "2023-03-21 22:12:51 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_gold_block": {
+    "criteria": {
+      "has_gold_block": "2023-03-21 22:12:54 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_birch_forest": "2023-03-21 22:12:46 -0400"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}

@@ -15,8 +15,7 @@ import org.joml.Vector3d
 import org.valkyrienskies.buggy.BuggyBlockEntities
 import org.valkyrienskies.buggy.BuggyBlocks
 import org.valkyrienskies.core.api.ships.ServerShip
-import org.valkyrienskies.core.apigame.constraints.VSAttachmentConstraint
-import org.valkyrienskies.core.apigame.constraints.VSHingeOrientationConstraint
+import org.valkyrienskies.core.apigame.constraints.*
 import org.valkyrienskies.core.impl.hooks.VSEvents
 import org.valkyrienskies.mod.common.dimensionId
 import org.valkyrienskies.mod.common.getShipManagingPos
@@ -33,8 +32,9 @@ class SpringBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(BuggyBlo
     var isBase = true
         private set
     private var otherPos: BlockPos? = null
-    private var attachConstraintId: ConstraintId? = null
-    private var hingeConstraintId: ConstraintId? = null
+    private var rotConstraintId: ConstraintId? = null
+    private var slideConstraintId: ConstraintId? = null
+    private var attchConstraintId: ConstraintId? = null
 
     override fun load(tag: CompoundTag) {
         super.load(tag)
@@ -117,7 +117,7 @@ class SpringBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(BuggyBlo
             val towards = blockState.getValue(BlockStateProperties.FACING).opposite
             val topPos = shipCenterPos.offset(towards.normal)
 
-            level.setBlock(shipCenterPos, Blocks.GOLD_BLOCK.defaultBlockState(), 11)
+            level.setBlock(shipCenterPos, Blocks.OAK_PLANKS.defaultBlockState(), 11)
             level.setBlock(topPos, BuggyBlocks.MECHANICAL_TOP.get().defaultBlockState()
                 .setValue(BlockStateProperties.FACING, towards), 11)
 
@@ -142,7 +142,7 @@ class SpringBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(BuggyBlo
 
     fun createConstraints(otherShip: ServerShip? = null): Boolean {
         if (isBase && otherPos != null && level != null
-            && attachConstraintId == null && hingeConstraintId == null
+            && slideConstraintId == null && attchConstraintId == null
             && !level!!.isClientSide) {
             val level = level as ServerLevel
             val shipId = level.getShipObjectManagingPos(blockPos)?.id ?: level.shipObjectWorld.dimensionToGroundBodyIdImmutable[level.dimensionId]!!
@@ -162,23 +162,24 @@ class SpringBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(BuggyBlo
                 Quaterniond(AxisAngle4d(lookingTowards.angle(x), xCross.normalize()))
 
 
-
-            val hingeOrientationCompliance = constraintComplience
-            val hingeMaxTorque = maxForce
-            val hingeConstraint = VSHingeOrientationConstraint(
-                shipId, otherShipId, hingeOrientationCompliance, hingeOrientation, hingeOrientation, hingeMaxTorque
+            val softrotConstraint = VSFixedOrientationConstraint(
+                shipId, otherShipId, 1e-7, hingeOrientation, hingeOrientation,
+                maxForce
             )
 
-            val attachmentCompliance = constraintComplience
-            val attachmentMaxForce = maxForce
-            val attachmentFixedDistance = 0.0
-            val attachmentConstraint = VSAttachmentConstraint(
-                shipId, otherShipId, attachmentCompliance, basePoint(), otherPoint()!!,
-                attachmentMaxForce, attachmentFixedDistance
+            val softConstraint = VSAttachmentConstraint(
+                shipId, otherShipId, 1e-6, basePoint(), otherPoint()!!,
+                maxForce, 0.0
             )
 
-            hingeConstraintId = level.shipObjectWorld.createNewConstraint(hingeConstraint)
-            attachConstraintId = level.shipObjectWorld.createNewConstraint(attachmentConstraint)
+            val slidingConstraint = VSSlideConstraint(
+                shipId, otherShipId, 1e-7, basePoint(), otherPoint()!!,
+                maxForce, lookingTowards.negate(Vector3d()), 5111.0
+            )
+
+            rotConstraintId = level.shipObjectWorld.createNewConstraint(softrotConstraint)
+            attchConstraintId = level.shipObjectWorld.createNewConstraint(softConstraint)
+            slideConstraintId = level.shipObjectWorld.createNewConstraint(slidingConstraint)
             return true
         }
 
@@ -188,8 +189,9 @@ class SpringBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(BuggyBlo
     fun destroyConstraints() {
         if (level?.shipObjectWorld != null && !level!!.isClientSide) {
             val level = level as ServerLevel
-            hingeConstraintId?.let { level.shipObjectWorld.removeConstraint(it) }
-            attachConstraintId?.let { level.shipObjectWorld.removeConstraint(it) }
+            rotConstraintId?.let { level.shipObjectWorld.removeConstraint(it) }
+            attchConstraintId?.let { level.shipObjectWorld.removeConstraint(it) }
+            slideConstraintId?.let { level.shipObjectWorld.removeConstraint(it) }
         }
     }
 
@@ -214,6 +216,6 @@ class SpringBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(BuggyBlo
     companion object {
         private val baseOffset = 0.0
         private val constraintComplience = 1e-10
-        private val maxForce = 1e10
+        private val maxForce = 1e15
     }
 }

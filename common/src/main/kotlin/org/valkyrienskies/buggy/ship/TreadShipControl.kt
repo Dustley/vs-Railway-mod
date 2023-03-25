@@ -57,18 +57,20 @@ class TreadShipControl : ShipForcesInducer {
             val tDir = physShip.transform.shipToWorld.transformDirection(dir.normal.toJOMLD())
             val tForce = tDir.mul(level.getBlockState(pos.toBlockPos()).getValue(BlockStateProperties.POWER).toDouble(), Vector3d())
             val tPos = Vec3d(pos).add(0.5, 0.5, 0.5).sub(Vec3d().readFrom(physShip.transform.positionInShip))
-            val wPos = Vector3d(physShip.transform.shipToWorld.transformPosition(Vector3d(pos.x.toDouble(),pos.y.toDouble(),pos.z.toDouble())))
+            val wPos = Vector3d(physShip.transform.shipToWorld.transformPosition(Vector3d(pos.x.toDouble() + 0.5,pos.y.toDouble()+ 0.5 ,pos.z.toDouble() + 0.5)))
 
             //calculate apForce
-            if(!level.isEmptyBlock(Vec3d(wPos.x, wPos.y -1.0, wPos.z).toPos())){
+            if(!level.isEmptyBlock(Vec3d(wPos.x, wPos.y - 1.0, wPos.z).toPos())){
                 apForce = apForce.add(tForce.mul(BuggyConfig.SERVER.TreadSpeed /* * level.getBlockState(pos.toBlockPos()).getValue(BuggyProperties.Energy) */))
             }
             
-            if( (!level.isEmptyBlock( Vec3d(wPos).add(tDir).toPos()) || !level.isEmptyBlock( Vec3d(wPos).sub(tDir).toPos()))){
-                println("Wall At: " + Vec3d(wPos).add(tDir).toPos() + " = " + level.getBlockState(Vec3d(wPos).add(tDir).toPos()))
-                println("pos: " + tDir )
-                apForce = apForce.add( Vector3d(0.0,1.0,0.0).mul(physShip.inertia.shipMass * BuggyConfig.SERVER.TreadClimb * tForce.length()) )
-            }
+
+            TODO("IMPLEMENT BLOCK CLIMBING")
+//            if( (!level.isEmptyBlock( Vec3d(wPos).add(tDir).toPos()) || !level.isEmptyBlock( Vec3d(wPos).sub(tDir).toPos()))){
+//                println("Wall At: " + Vec3d(wPos).add(tDir).toPos() + " = " + level.getBlockState(Vec3d(wPos).add(tDir).toPos()))
+//                println("pos: " + tDir )
+//                apForce = apForce.add( Vector3d(0.0,1.0,0.0).mul(physShip.inertia.shipMass * BuggyConfig.SERVER.TreadClimb * tForce.normalize().length()) )
+//            }
 
 
             //move

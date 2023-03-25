@@ -17,7 +17,7 @@ object BuggyConfig {
         var TreadSpeed = 1000.0
 
         @JsonSchema(description = "The Force a Tread will output when moving up a block")
-        var TreadClimb = 1.0
+        var TreadClimb = 5.5
 
         @JsonSchema(description = "Blacklist of blocks that don't get assembled")
         var blockBlacklist = setOf(
