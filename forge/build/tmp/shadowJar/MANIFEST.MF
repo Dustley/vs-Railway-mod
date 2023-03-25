@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+MixinConfigs: vs_buggy.mixins.json,vs_buggy-common.mixins.json
+

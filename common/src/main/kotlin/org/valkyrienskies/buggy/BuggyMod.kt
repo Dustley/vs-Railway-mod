@@ -14,6 +14,7 @@ object BuggyMod {
         BuggyScreens.register()
         BuggyEntities.register()
         BuggyWeights.register()
+        //BuggyCommands.register()
         VSConfigClass.registerConfig("vs_buggy", BuggyConfig::class.java)
     }
 

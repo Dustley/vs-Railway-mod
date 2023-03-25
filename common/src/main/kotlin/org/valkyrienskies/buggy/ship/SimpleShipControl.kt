@@ -39,6 +39,7 @@ class SimpleShipControl : ShipForcesInducer {
             println("force to apply: $force")
 
             physShip.applyInvariantForce(force)
+
         }
         Forces.clear()
 
@@ -60,7 +61,6 @@ class SimpleShipControl : ShipForcesInducer {
             if(!level.isEmptyBlock(fPos)){
                 apForce = tForce.mul(BuggyConfig.SERVER.TreadSpeed /* * level.getBlockState(pos.toBlockPos()).getValue(BuggyProperties.Energy) */).conv()
             }
-
 
             if (apForce.isFinite) {
                 physShip.applyInvariantForceToPos(apForce, tPos.conv())

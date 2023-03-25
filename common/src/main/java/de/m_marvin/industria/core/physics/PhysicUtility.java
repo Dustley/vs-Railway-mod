@@ -1,17 +1,22 @@
 package de.m_marvin.industria.core.physics;
 
 import java.lang.Math;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
+import de.m_marvin.industria.core.physics.types.ContraptionHitResult;
 import de.m_marvin.industria.core.util.GameUtility;
 import de.m_marvin.industria.core.util.MathUtility;
 import de.m_marvin.unimat.impl.Quaternion;
 import de.m_marvin.univec.impl.Vec3i;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import org.joml.*;
 import org.joml.primitives.AABBic;
+import org.valkyrienskies.core.api.ships.LoadedShip;
+import org.valkyrienskies.core.api.ships.QueryableShipData;
 import org.valkyrienskies.core.api.ships.ServerShip;
 import org.valkyrienskies.core.api.ships.Ship;
 import org.valkyrienskies.core.api.ships.properties.ShipTransform;
@@ -29,12 +34,56 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 
-import static org.valkyrienskies.mod.common.VSGameUtilsKt.getDimensionId;
+
+import org.joml.Matrix4dc;
+import org.joml.Vector3d;
+
+import static org.valkyrienskies.mod.common.VSGameUtilsKt.*;
 
 public class PhysicUtility {
 
 	protected static Map<Long, String> contraptionNames = new HashMap<>();
-	
+
+	/* Naming and finding of contraptions */
+
+	public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+		for (Map.Entry<T, E> entry : map.entrySet()) {
+			if (Objects.equals(value, entry.getValue())) {
+				return entry.getKey();
+			}
+		}
+		return null;
+	}
+
+	public static void setContraptionName(Level level, Ship contraption, String name) {
+		contraptionNames.put(contraption.getId(), name);
+	}
+
+	public static Long getContraptionIdByName(Level level, String name) {
+		return getKeyByValue(contraptionNames, name);
+	}
+
+	public static Ship getContraptionByName(Level level, String name) {
+		Long id = getContraptionIdByName(level, name);
+		return getContraptionById(level, id);
+	}
+
+	public static Iterable<Ship> getContraptionIntersecting(Level level, BlockPos position)  {
+		return VSGameUtilsKt.getShipsIntersecting(level, new AABB(position, position));
+	}
+
+	public static Ship getContraptionOfBlock(Level level, BlockPos shipBlockPos) {
+		return VSGameUtilsKt.getShipObjectManagingPos(level, shipBlockPos);
+	}
+
+	public static Ship getContraptionById(Level level, long id) {
+		if (!level.isClientSide){
+			return VSGameUtilsKt.getShipObjectWorld(level).getLoadedShips().getById(id);
+		} else {
+			return null;
+		}
+	}
+
 	/* Translating of positions and moving of contraptions */
 	
 	public static Vec3d toContraptionPos(Ship contraption, Vec3d pos) {
@@ -292,6 +341,96 @@ public class PhysicUtility {
 			}
 		}
 		contraptionNames.remove(contraption.getId());
+	}
+
+	/* Listing and creation contraptions in the world */
+
+	public static QueryableShipData<LoadedShip> getLoadedContraptions(Level level) {
+		return VSGameUtilsKt.getShipObjectWorld(level).getLoadedShips();
+	}
+
+	public static QueryableShipData<Ship> getAllContraptions(Level level) {
+		return VSGameUtilsKt.getShipObjectWorld(level).getAllShips();
+	}
+
+	public static ServerShip assembleToContraption(ServerLevel level, List<BlockPos> blocks, boolean removeOriginal, float scale) {
+		assert level instanceof ServerLevel : "Can't manage contraptions on client side!";
+
+		if (blocks.isEmpty()) {
+			return null;
+		}
+
+		BlockPos structureCornerMin = blocks.get(0);
+		BlockPos structureCornerMax = blocks.get(0);
+		boolean hasSolids = false;
+
+		for (BlockPos itPos : blocks) {
+			structureCornerMin = MathUtility.getMinCorner(structureCornerMin, itPos);
+			structureCornerMax = MathUtility.getMaxCorner(structureCornerMax, itPos);
+
+			if (PhysicUtility.isSolidContraptionBlock(level.getBlockState(itPos))) hasSolids = true;
+		}
+
+		if (!hasSolids) return null;
+
+		Vec3d contraptionPos = MathUtility.getMiddle(structureCornerMin, structureCornerMax);
+		ServerShip contraption = createContraptionAt(contraptionPos, scale, level);
+
+		Vec3d contraptionOrigin = PhysicUtility.toContraptionPos(contraption, contraptionPos);
+		BlockPos centerBlockPos = new BlockPos(contraptionPos.x, contraptionPos.y, contraptionPos.z);
+
+		for (BlockPos itPos : blocks) {
+			Vec3d relativePosition = Vec3d.fromVec(itPos).sub(contraptionPos);
+			Vec3d shipPos = contraptionOrigin.add(relativePosition);
+
+			GameUtility.copyBlock(level, itPos, new BlockPos(shipPos.x, shipPos.y, shipPos.z));
+
+		}
+
+		if (!blocks.contains(centerBlockPos)) {
+			BlockPos centerShipPos = PhysicUtility.toContraptionBlockPos(contraption, centerBlockPos);
+			level.setBlock(centerShipPos, Blocks.AIR.defaultBlockState(), 3);
+		}
+
+		if (removeOriginal) {
+			for (BlockPos itPos : blocks) {
+				GameUtility.removeBlock(level, itPos);
+			}
+		}
+
+		for (BlockPos itPos : blocks) {
+			Vec3d relativePosition = Vec3d.fromVec(itPos).sub(contraptionPos);
+			Vec3d shipPos = contraptionOrigin.add(relativePosition);
+
+			GameUtility.triggerUpdate(level, itPos);
+			GameUtility.triggerUpdate(level, new BlockPos(shipPos.x, shipPos.y, shipPos.z));
+		}
+
+		setPosition((ServerShip) contraption, new ContraptionPosition(new Quaternion(new Vec3i(0, 1, 1), 0), contraptionPos), false);
+
+		return contraption;
+	}
+
+	/* Raycasting for contraptions */
+
+	public static ContraptionHitResult clipForContraption(Level level, Vec3d from, Vec3d direction, double range) {
+		return clipForContraption(level, from, from.add(direction.mul(range)));
+	}
+
+	public static ContraptionHitResult clipForContraption(Level level, Vec3d from, Vec3d to) {
+		ClipContext clipContext = new ClipContext(from.writeTo(new Vec3(0, 0, 0)), to.writeTo(new Vec3(0, 0, 0)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, null);
+		HitResult clipResult = level.clip(clipContext);
+
+		if (clipResult.getType() == HitResult.Type.BLOCK) {
+			BlockPos hitBlockPos = ((BlockHitResult) clipResult).getBlockPos();
+			Ship contraption = VSGameUtilsKt.getShipObjectManagingPos(level, hitBlockPos);
+			if (contraption != null) {
+				Vec3 hitPosition = clipResult.getLocation();
+				return ContraptionHitResult.hit(hitPosition, hitBlockPos, contraption);
+			}
+
+		}
+		return ContraptionHitResult.miss(clipResult.getLocation());
 	}
 
 	/* Util stuff */
