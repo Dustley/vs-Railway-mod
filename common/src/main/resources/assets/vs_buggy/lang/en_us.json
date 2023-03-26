@@ -1,6 +1,13 @@
 {
   "itemGroup.vs_buggy.buggy_tab": "VS Buggy",
 
+  "buggy.item.info.conduit.nodeSelect":			"Erste Verbindung ausgewählt (Abbrechen mit Umschalt + Rechtsklick)",
+  "buggy.item.info.conduit.changeNodes":		"Leitungslänge: %1$s (Abbrechen mit Umschalt + Rechtsklick)",
+  "buggy.item.info.conduit.placed":				"Leitung platziert",
+  "buggy.item.info.conduit.abbort":				"Platzieren der Leitung abgebrochen",
+  "buggy.item.info.conduit.failed":				"Platzieren der Leitung fehlgeschlagen",
+  "buggy.item.info.conduit.toFarNodes":			"Die Leitung ist zu lang: %1$s > max. %2$s",
+
   "buggy.commands.setconduit.success":			"Leitung beginnend bei %1$s %2$s %3$s geändert",
   "buggy.commands.setconduit.failure":			"Platzieren der Leitung nicht möglich!",
   "buggy.commands.contraption.remove.success":	"Vorrichtung entfernt",

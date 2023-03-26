@@ -4,10 +4,9 @@
     <facet type="minecraft" name="Minecraft">
       <configuration>
         <autoDetectTypes>
-          <platformType>ARCHITECTURY</platformType>
-          <platformType>FABRIC</platformType>
           <platformType>MIXIN</platformType>
           <platformType>MCP</platformType>
+          <platformType>ARCHITECTURY</platformType>
         </autoDetectTypes>
       </configuration>
     </facet>

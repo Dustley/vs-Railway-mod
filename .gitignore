@@ -1,14 +1,42 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+# ignore .idea except
+.idea/*
+# code style
+!.idea/codeStyles/
+# inspection profile
+!.idea/inspectionProfiles/
+# saveactions config
+!.idea/saveactions_settings.xml
+# recommended plugins
+!.idea/externalDependencies.xml
+
+# vscode
+.vscode
+
+# gradle
+build
 .gradle
-/build/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# other
+eclipse
+run
+run_server
+logs
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# Files from Forge MDK
+forge*changelog.txt
 
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+# Files generated for Fabric
+/fabric/src/generated/

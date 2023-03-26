@@ -35,6 +35,96 @@ import net.minecraft.world.phys.Vec3;
 
 public class ContraptionCommand {
 
+    public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
+        dispatcher.register(Commands.literal("contraption").requires((source) -> {
+                    return source.hasPermission(2);
+                })
+                .then(
+                        Commands.literal("create")
+                                .then(
+                                        Commands.argument("pos1", BlockPosArgument.blockPos())
+                                                .executes((source) ->
+                                                        createContraption(source, BlockPosArgument.getLoadedBlockPos(source, "pos1"), BlockPosArgument.getLoadedBlockPos(source, "pos1"), 1F)
+                                                )
+                                                .then(
+                                                        Commands.argument("pos2", BlockPosArgument.blockPos())
+                                                                .executes((source) ->
+                                                                        createContraption(source, BlockPosArgument.getLoadedBlockPos(source, "pos1"), BlockPosArgument.getLoadedBlockPos(source, "pos2"), 1F)
+                                                                )
+                                                                .then(
+                                                                        Commands.argument("scale", FloatArgumentType.floatArg(0.0625F, 8F))
+                                                                                .executes((source) ->
+                                                                                        createContraption(source, BlockPosArgument.getLoadedBlockPos(source, "pos1"), BlockPosArgument.getLoadedBlockPos(source, "pos2"), FloatArgumentType.getFloat(source, "scale"))
+                                                                                )
+                                                                )
+                                                )
+                                )
+                )
+                .then(
+                        Commands.literal("assemble")
+                                .then(
+                                        Commands.argument("startPos", BlockPosArgument.blockPos())
+                                                .executes((source) ->
+                                                        assembleContraption(source, BlockPosArgument.getLoadedBlockPos(source, "startPos"), 1F)
+                                                )
+                                                .then(
+                                                        Commands.argument("scale", FloatArgumentType.floatArg(0.0625F, 8F))
+                                                                .executes((source) ->
+                                                                        assembleContraption(source, BlockPosArgument.getLoadedBlockPos(source, "startPos"), FloatArgumentType.getFloat(source, "scale"))
+                                                                )
+                                                )
+                                )
+                )
+                .then(
+                        Commands.literal("remove")
+                                .then(
+                                        Commands.argument("contraption", ContraptionIdArgument.contraption())
+                                                .executes((source) ->
+                                                        removeContraption(source, ContraptionIdArgument.getContraption(source, "contraption"))
+                                                )
+                                )
+                )
+                .then(
+                        Commands.literal("teleport")
+                                .then(
+                                        Commands.argument("contraption", ContraptionIdArgument.contraption())
+                                                .then(
+                                                        Commands.argument("position", Vec3Argument.vec3())
+                                                                .executes((source) ->
+                                                                        teleportContraption(source, ContraptionIdArgument.getContraption(source, "contraption"), Vec3Argument.getVec3(source, "position"), false, 0F, 0F, 0F)
+                                                                )
+                                                )
+                                )
+                )
+                .then(
+                        Commands.literal("find")
+                                .then(
+                                        Commands.argument("contraption", ContraptionIdArgument.contraption())
+                                                .executes((source) ->
+                                                        findContraption(source, ContraptionIdArgument.getContraption(source, "contraption"), false)
+                                                )
+                                                .then(
+                                                        Commands.literal("teleport")
+                                                                .executes((source) ->
+                                                                        findContraption(source, ContraptionIdArgument.getContraption(source, "contraption"), true)
+                                                                )
+                                                )
+                                )
+                )
+                .then(
+                        Commands.literal("name")
+                                .then(
+                                        Commands.argument("contraption", ContraptionIdArgument.contraption())
+                                                .then(
+                                                        Commands.argument("name", StringArgumentType.greedyString())
+                                                                .executes((source) ->
+                                                                        setName(source, ContraptionIdArgument.getContraption(source, "contraption"), StringArgumentType.getString(source, "name"))
+                                                                )
+                                                )
+                                )
+                ));
+    }
+
     public static int setName(CommandContext<CommandSourceStack> source, Ship contraption, String name) {
 
         PhysicUtility.setContraptionName(source.getSource().getLevel(), contraption, name);
@@ -134,7 +224,7 @@ public class ContraptionCommand {
         ServerShip contraption = PhysicUtility.assembleToContraption(source.getSource().getLevel(), structureBlocks.get(), true, scale);
 
         if (contraption != null) {
-            source.getSource().sendSuccess(new TranslatableComponent("buggy.commands.contraption.assemble.success", startPos.getX(), startPos.getY(), startPos.getZ(), startPos), true);
+            source.getSource().sendSuccess(new TranslatableComponent("buggy.commands.contraption.assemble.success", startPos.getX(), startPos.getY(), startPos.getZ()), true);
             return Command.SINGLE_SUCCESS;
         }
 
@@ -147,7 +237,7 @@ public class ContraptionCommand {
 
         PhysicUtility.removeContraption(source.getSource().getLevel(), contraption);
 
-        source.getSource().sendSuccess(new TranslatableComponent("buggy.commands.contraption.remove.success", contraption.getId()), true);
+        source.getSource().sendSuccess(new TranslatableComponent("buggy.commands.contraption.remove.success"), true);
         return Command.SINGLE_SUCCESS;
 
     }
