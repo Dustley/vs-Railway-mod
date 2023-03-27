@@ -1,6 +1,5 @@
 package org.valkyrienskies.buggy.blocks.movement
 
-import de.m_marvin.univec.impl.Vec3d
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.server.level.ServerLevel
@@ -14,11 +13,11 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.material.Material
 import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
-import org.valkyrienskies.buggy.BuggyProperties
-import org.valkyrienskies.buggy.blocks.NodeBlock
+import org.valkyrienskies.buggy.nodes.INodeBlock
+import org.valkyrienskies.buggy.nodes.Node
+import org.valkyrienskies.buggy.nodes.types.NodeData
 import org.valkyrienskies.buggy.ship.TreadShipControl
 import org.valkyrienskies.buggy.util.DirectionalShape
-import org.valkyrienskies.buggy.util.Node
 import org.valkyrienskies.buggy.util.RotShapes
 import org.valkyrienskies.core.api.ships.getAttachment
 import org.valkyrienskies.mod.common.getShipManagingPos
@@ -27,14 +26,10 @@ import org.valkyrienskies.mod.common.getShipObjectManagingPos
 class TreadBlock : DirectionalBlock(
     Properties.of(Material.STONE)
         .sound(SoundType.STONE).strength(1.0f, 2.0f)
-), NodeBlock {
+), INodeBlock {
 
     val SHAPE = RotShapes.box(3.0, 5.0, 4.0, 13.0, 11.0, 16.0)
     val Tread_SHAPE = DirectionalShape.south(SHAPE)
-
-    override var ConnectedNode: Node
-        get() = ConnectedNode
-        set(value) {}
 
     init {
 //        registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BlockStateProperties.POWER, 0).setValue(BuggyProperties.Energy, 0))
@@ -64,8 +59,6 @@ class TreadBlock : DirectionalBlock(
 
         val signal = level.getBestNeighborSignal(pos)
         level.setBlock(pos, state.setValue(BlockStateProperties.POWER, signal), 2)
-
-        setNode(Node())
 
         TreadShipControl.getOrCreate(level.getShipObjectManagingPos(pos) ?: level.getShipManagingPos(pos) ?: return
         )?.addTread(pos, level, state.getValue(FACING))
@@ -102,6 +95,8 @@ class TreadBlock : DirectionalBlock(
         return defaultBlockState()
             .setValue(FACING, ctx.nearestLookingDirection)
     }
+
+    override var node: Node = Node(NodeData())
 
 
 //    override fun animateTick(state: BlockState, level: Level, pos: BlockPos, random: Random) {

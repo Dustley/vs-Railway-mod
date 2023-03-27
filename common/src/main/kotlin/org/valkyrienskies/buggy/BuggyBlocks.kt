@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item
 import org.valkyrienskies.buggy.blocks.*
 import org.valkyrienskies.buggy.blocks.bearings.BearingBaseBlock
 import org.valkyrienskies.buggy.blocks.MechanicalTopBlock
+import org.valkyrienskies.buggy.blocks.logic.PowerEmitBlock
 import org.valkyrienskies.buggy.blocks.motors.EngineBlock
 import org.valkyrienskies.buggy.blocks.movement.TreadBlock
 import org.valkyrienskies.buggy.blocks.seats.SeatBlock
@@ -28,14 +29,15 @@ object BuggyBlocks {
     // DEBUG BLOCKS:
 //    val TARGETER                 = BLOCKS.register("targeter", ::TargeterBlock)
 
-    val BASIC_SEAT                   = BLOCKS.register("basic_seat", ::SeatBlock)
-    val BASIC_ENGINE                 = BLOCKS.register("basic_engine", ::EngineBlock)
+    val BASIC_SEAT                  = BLOCKS.register("basic_seat", ::SeatBlock)
+    val BASIC_ENGINE                = BLOCKS.register("basic_engine", ::EngineBlock)
 
     val BEARING                     = BLOCKS.register("bearing", ::BearingBaseBlock)
-    val SPRING                     = BLOCKS.register("spring", ::SpringBaseBlock)
+    val SPRING                      = BLOCKS.register("spring", ::SpringBaseBlock)
     val MECHANICAL_TOP              = BLOCKS.register("mechanical_top", ::MechanicalTopBlock)
 
     val BASIC_TREAD                 = BLOCKS.register("basic_tread", ::TreadBlock)
+    val EMMITOR                     = BLOCKS.register("emmitor", ::PowerEmitBlock)
 
     fun register() {
         BLOCKS.applyAll()

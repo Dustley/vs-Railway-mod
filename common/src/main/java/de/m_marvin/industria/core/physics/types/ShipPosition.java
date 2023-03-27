@@ -3,12 +3,12 @@ package de.m_marvin.industria.core.physics.types;
 import de.m_marvin.unimat.impl.Quaternion;
 import de.m_marvin.univec.impl.Vec3d;
 
-public class ContraptionPosition {
+public class ShipPosition {
 	
 	public Quaternion orientation;
 	public Vec3d position;
 	
-	public ContraptionPosition(Quaternion orientation, Vec3d position) {
+	public ShipPosition(Quaternion orientation, Vec3d position) {
 		this.orientation = orientation;
 		this.position = position;
 	}

@@ -22,6 +22,7 @@ import org.valkyrienskies.core.impl.pipelines.SegmentUtils
 import org.valkyrienskies.mod.common.util.toJOML
 import org.valkyrienskies.buggy.BuggyConfig
 import org.valkyrienskies.buggy.api.extension.toPos
+import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.mod.common.util.toBlockPos
 import org.valkyrienskies.mod.common.util.toJOMLD
 import java.util.concurrent.CopyOnWriteArrayList
@@ -61,11 +62,13 @@ class TreadShipControl : ShipForcesInducer {
 
             //calculate apForce
             if(!level.isEmptyBlock(Vec3d(wPos.x, wPos.y - 1.0, wPos.z).toPos())){
-                apForce = apForce.add(tForce.mul(BuggyConfig.SERVER.TreadSpeed /* * level.getBlockState(pos.toBlockPos()).getValue(BuggyProperties.Energy) */))
+                val nodeBlock = level.getBlockState(pos.toBlockPos()).block as INodeBlock
+                val nodePower:Double = nodeBlock.node.getData().num ?: 0.0
+                apForce = apForce.add(tForce.mul(BuggyConfig.SERVER.TreadSpeed * nodePower))
             }
             
 
-            TODO("IMPLEMENT BLOCK CLIMBING")
+            //TODO("IMPLEMENT BLOCK CLIMBING")
 //            if( (!level.isEmptyBlock( Vec3d(wPos).add(tDir).toPos()) || !level.isEmptyBlock( Vec3d(wPos).sub(tDir).toPos()))){
 //                println("Wall At: " + Vec3d(wPos).add(tDir).toPos() + " = " + level.getBlockState(Vec3d(wPos).add(tDir).toPos()))
 //                println("pos: " + tDir )

@@ -14,21 +14,14 @@ import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.material.Material
 import org.valkyrienskies.buggy.blockentity.seat.SeatBlockEntity
-import org.valkyrienskies.buggy.blocks.NodeBlock
-import org.valkyrienskies.buggy.util.Node
+import org.valkyrienskies.buggy.nodes.INodeBlock
+import org.valkyrienskies.buggy.nodes.Node
+import org.valkyrienskies.buggy.nodes.types.NodeData
 
 class EngineBlock : BaseEntityBlock(
     Properties.of(Material.STONE)
         .sound(SoundType.STONE).strength(1.0f, 2.0f)
-), NodeBlock {
-
-    override var ConnectedNode: Node
-        get() = ConnectedNode
-        set(value) {}
-
-    init {
-        setNode(Node())
-    }
+), INodeBlock {
 
     override fun newBlockEntity(pos: BlockPos, state: BlockState): BlockEntity = SeatBlockEntity(pos, state)
 
@@ -36,7 +29,6 @@ class EngineBlock : BaseEntityBlock(
         builder.add(BlockStateProperties.POWER)
         super.createBlockStateDefinition(builder)
     }
-
 
     override fun <T : BlockEntity> getTicker(
         level: Level?,
@@ -53,6 +45,8 @@ class EngineBlock : BaseEntityBlock(
             )
         }
     }
+
+    override var node: Node = Node(NodeData())
 
     override fun neighborChanged(
         state: BlockState,

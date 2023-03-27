@@ -14,21 +14,14 @@ import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 import net.minecraft.world.level.material.Material
 import org.valkyrienskies.buggy.blockentity.seat.SeatBlockEntity
-import org.valkyrienskies.buggy.blocks.NodeBlock
-import org.valkyrienskies.buggy.util.Node
+import org.valkyrienskies.buggy.nodes.INodeBlock
+import org.valkyrienskies.buggy.nodes.Node
+import org.valkyrienskies.buggy.nodes.types.NodeData
 
 class SeatBlock : BaseEntityBlock(
     Properties.of(Material.STONE)
         .sound(SoundType.STONE).strength(1.0f, 2.0f)
-), NodeBlock {
-
-    override var ConnectedNode: Node
-        get() = ConnectedNode
-        set(value) {}
-
-    init {
-        setNode(Node())
-    }
+), INodeBlock {
 
     override fun newBlockEntity(pos: BlockPos, state: BlockState): BlockEntity = SeatBlockEntity(pos, state)
 
@@ -68,5 +61,7 @@ class SeatBlock : BaseEntityBlock(
         val signal = level.getBestNeighborSignal(pos)
         level.setBlock(pos, state.setValue(BlockStateProperties.POWER, signal), 2)
     }
+
+    override var node: Node = Node(NodeData())
 
 }
