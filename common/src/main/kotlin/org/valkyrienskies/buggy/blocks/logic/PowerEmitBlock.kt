@@ -15,9 +15,10 @@ import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.nodes.Node
-import org.valkyrienskies.buggy.nodes.types.NodeData
+import org.valkyrienskies.buggy.nodes.types.EmitterNode
 import org.valkyrienskies.buggy.util.DirectionalShape
 import org.valkyrienskies.buggy.util.RotShapes
+import java.util.*
 
 class PowerEmitBlock : DirectionalBlock(
     Properties.of(Material.STONE)
@@ -52,6 +53,24 @@ class PowerEmitBlock : DirectionalBlock(
             .setValue(FACING, ctx.nearestLookingDirection)
     }
 
-    override var node: Node = Node(NodeData())
+    override fun onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, isMoving: Boolean) {
+        super.onPlace(state, level, pos, oldState, isMoving)
 
+        if (level.isClientSide) return
+        level as ServerLevel
+        node.connectLevel(level)
+    }
+
+    override var node: Node = EmitterNode()
+
+    override fun neighborChanged(
+        state: BlockState,
+        level: Level,
+        pos: BlockPos,
+        block: Block,
+        fromPos: BlockPos,
+        isMoving: Boolean
+    ) {
+        super.neighborChanged(state, level, pos, block, fromPos, isMoving)
+    }
 }

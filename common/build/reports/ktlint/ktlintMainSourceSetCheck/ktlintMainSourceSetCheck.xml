@@ -11,35 +11,19 @@
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\BuggyBlocks.kt">
 		<error line="3" column="1" severity="error" message="Imports must be ordered in lexicographic order without any empty lines in-between with &quot;java&quot;, &quot;javax&quot;, &quot;kotlin&quot; and aliases in the end" source="import-ordering" />
 		<error line="6" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
-		<error line="31" column="20" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
-		<error line="32" column="22" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
-		<error line="34" column="17" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
-		<error line="35" column="16" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
-		<error line="36" column="24" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
-		<error line="38" column="21" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
-		<error line="46" column="37" severity="error" message="Unexpected spacing before &quot;)&quot;" source="paren-spacing" />
-		<error line="46" column="39" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="51" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="32" column="20" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="33" column="22" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="35" column="17" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="36" column="16" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="37" column="24" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="39" column="21" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="40" column="17" severity="error" message="Unnecessary space(s)" source="no-multi-spaces" />
+		<error line="48" column="37" severity="error" message="Unexpected spacing before &quot;)&quot;" source="paren-spacing" />
+		<error line="48" column="39" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
+		<error line="53" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\BuggyClientScreens.kt">
 		<error line="24" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-	</file>
-	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\BuggyCommands.kt">
-		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="4" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="5" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="6" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="7" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="8" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="9" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="10" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="11" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="12" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="13" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="14" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="17" column="5" severity="error" message="Missing space after //" source="comment-spacing" />
-		<error line="143" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\BuggyConfig.kt">
 		<error line="101" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
@@ -235,27 +219,6 @@
 		<error line="24" column="63" severity="error" message="Missing space after //" source="comment-spacing" />
 		<error line="42" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
 	</file>
-	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\NodeBlock.kt">
-		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="4" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="5" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="6" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="7" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="8" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="9" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="10" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="11" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="12" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="13" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="16" column="20" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="18" column="23" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="20" column="19" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="28" column="29" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="28" column="37" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="28" column="43" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="31" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\bearings\BearingBaseBlock.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
 		<error line="9" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
@@ -264,32 +227,43 @@
 		<error line="61" column="9" severity="error" message="Missing space after //" source="comment-spacing" />
 		<error line="62" column="9" severity="error" message="Missing space after //" source="comment-spacing" />
 	</file>
+	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\logic\PowerEmitBlock.kt">
+		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
+		<error line="9" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
+		<error line="21" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
+		<error line="23" column="23" severity="error" message="Missing newline after &quot;:&quot;" source="indent" />
+		<error line="26" column="3" severity="error" message="Missing newline after &quot;,&quot;" source="indent" />
+		<error line="47" column="9" severity="error" message="Missing space after //" source="comment-spacing" />
+	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\motors\EngineBlock.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="20" column="20" severity="error" message="Missing newline after &quot;:&quot;" source="indent" />
-		<error line="23" column="3" severity="error" message="Missing newline after &quot;,&quot;" source="indent" />
-		<error line="40" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="21" column="20" severity="error" message="Missing newline after &quot;:&quot;" source="indent" />
+		<error line="24" column="3" severity="error" message="Missing newline after &quot;,&quot;" source="indent" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\movement\TreadBlock.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="10" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
-		<error line="17" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="27" column="19" severity="error" message="Missing newline after &quot;:&quot;" source="indent" />
-		<error line="30" column="3" severity="error" message="Missing newline after &quot;,&quot;" source="indent" />
-		<error line="55" column="9" severity="error" message="Missing space after //" source="comment-spacing" />
-		<error line="70" column="38" severity="error" message="Missing newline after &quot;(&quot;" source="indent" />
-		<error line="81" column="98" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
-		<error line="82" column="90" severity="error" message="Unexpected spacing after &quot;(&quot;" source="paren-spacing" />
-		<error line="82" column="94" severity="error" message="Unexpected spacing before &quot;)&quot;" source="paren-spacing" />
-		<error line="106" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
-		<error line="119" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="9" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
+		<error line="24" column="1" severity="error" message="Wildcard import" source="no-wildcard-imports" />
+		<error line="26" column="19" severity="error" message="Missing newline after &quot;:&quot;" source="indent" />
+		<error line="29" column="3" severity="error" message="Missing newline after &quot;,&quot;" source="indent" />
+		<error line="50" column="9" severity="error" message="Missing space after //" source="comment-spacing" />
+		<error line="57" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="63" column="38" severity="error" message="Missing newline after &quot;(&quot;" source="indent" />
+		<error line="75" column="90" severity="error" message="Unexpected spacing after &quot;(&quot;" source="paren-spacing" />
+		<error line="75" column="94" severity="error" message="Unexpected spacing before &quot;)&quot;" source="paren-spacing" />
+		<error line="91" column="70" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
+		<error line="96" column="90" severity="error" message="Unexpected spacing after &quot;(&quot;" source="paren-spacing" />
+		<error line="96" column="94" severity="error" message="Unexpected spacing before &quot;)&quot;" source="paren-spacing" />
+		<error line="98" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="99" column="38" severity="error" message="Missing newline after &quot;(&quot;" source="indent" />
+		<error line="128" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\seats\SeatBlock.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
 		<error line="20" column="18" severity="error" message="Missing newline after &quot;:&quot;" source="indent" />
 		<error line="23" column="3" severity="error" message="Missing newline after &quot;,&quot;" source="indent" />
-		<error line="71" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="65" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\blocks\springs\SpringBaseBlock.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
@@ -302,16 +276,33 @@
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\items\tools\ConnectorItem.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="6" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="9" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="11" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="12" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="24" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
-		<error line="33" column="11" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
-		<error line="42" column="13" severity="error" message="Missing space after //" source="comment-spacing" />
-		<error line="46" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-		<error line="51" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-		<error line="52" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="4" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="17" column="29" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
+		<error line="21" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="64" column="28" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
+		<error line="64" column="40" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
+		<error line="64" column="45" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
+		<error line="73" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+	</file>
+	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\nodes\INodeBlock.kt">
+		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
+		<error line="6" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+	</file>
+	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\nodes\Node.kt">
+		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
+		<error line="9" column="21" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
+		<error line="14" column="41" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
+	</file>
+	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\nodes\types\AddingNode.kt">
+		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
+		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="7" column="17" severity="error" message="Missing spacing before &quot;:&quot;" source="colon-spacing" />
+	</file>
+	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\nodes\types\EmitterNode.kt">
+		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
+		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="7" column="18" severity="error" message="Missing spacing before &quot;:&quot;" source="colon-spacing" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\registry\CreativeTabs.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
@@ -341,16 +332,16 @@
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\ship\SimpleShipControl.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
 		<error line="3" column="1" severity="error" message="Imports must be ordered in lexicographic order without any empty lines in-between with &quot;java&quot;, &quot;javax&quot;, &quot;kotlin&quot; and aliases in the end" source="import-ordering" />
-		<error line="42" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-		<error line="49" column="15" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
-		<error line="56" column="110" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
-		<error line="56" column="127" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
-		<error line="58" column="80" severity="error" message="Missing spacing after &quot;-&quot;" source="op-spacing" />
-		<error line="60" column="13" severity="error" message="Missing space after //" source="comment-spacing" />
-		<error line="61" column="15" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
-		<error line="61" column="42" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="75" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
-		<error line="90" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="5" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="6" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="8" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="9" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="17" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="18" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="41" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="44" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="51" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="58" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\ship\TreadShipControl.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
@@ -359,47 +350,20 @@
 		<error line="9" column="1" severity="error" message="Unused import" source="no-unused-imports" />
 		<error line="11" column="1" severity="error" message="Unused import" source="no-unused-imports" />
 		<error line="12" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="53" column="15" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
-		<error line="60" column="114" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
-		<error line="60" column="130" severity="error" message="Missing spacing before &quot;+&quot;" source="op-spacing" />
-		<error line="60" column="135" severity="error" message="Unexpected spacing before &quot;,&quot;" source="comma-spacing" />
-		<error line="60" column="137" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
-		<error line="62" column="13" severity="error" message="Missing space after //" source="comment-spacing" />
-		<error line="63" column="15" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
-		<error line="63" column="81" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="66" column="1" severity="error" message="Trailing space(s)" source="no-trailing-spaces" />
-		<error line="67" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
-		<error line="75" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
-		<error line="76" column="13" severity="error" message="Missing space after //" source="comment-spacing" />
-		<error line="103" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-	</file>
-	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\util\Connection.kt">
-		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="3" column="23" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="3" column="32" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="5" column="18" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="6" column="16" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="8" column="19" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="11" column="17" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="15" column="27" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="16" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-		<error line="18" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-	</file>
-	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\util\Node.kt">
-		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />
-		<error line="3" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="4" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="5" column="1" severity="error" message="Unused import" source="no-unused-imports" />
-		<error line="9" column="28" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="10" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
-		<error line="23" column="34" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="23" column="48" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="23" column="57" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="23" column="63" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
-		<error line="23" column="73" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="26" column="11" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
-		<error line="26" column="20" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
-		<error line="35" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
+		<error line="26" column="1" severity="error" message="Unused import" source="no-unused-imports" />
+		<error line="55" column="15" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
+		<error line="62" column="114" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
+		<error line="62" column="130" severity="error" message="Missing spacing before &quot;+&quot;" source="op-spacing" />
+		<error line="62" column="135" severity="error" message="Unexpected spacing before &quot;,&quot;" source="comma-spacing" />
+		<error line="62" column="137" severity="error" message="Missing spacing after &quot;,&quot;" source="comma-spacing" />
+		<error line="64" column="13" severity="error" message="Missing space after //" source="comment-spacing" />
+		<error line="65" column="15" severity="error" message="Missing spacing after &quot;if&quot;" source="keyword-spacing" />
+		<error line="65" column="81" severity="error" message="Missing spacing before &quot;{&quot;" source="curly-spacing" />
+		<error line="69" column="1" severity="error" message="Needless blank line(s)" source="no-consecutive-blank-lines" />
+		<error line="70" column="13" severity="error" message="Missing space after //" source="comment-spacing" />
+		<error line="78" column="71" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
+		<error line="82" column="74" severity="error" message="Missing spacing after &quot;:&quot;" source="colon-spacing" />
+		<error line="96" column="1" severity="error" message="Unexpected blank line(s) before &quot;}&quot;" source="no-blank-line-before-rbrace" />
 	</file>
 	<file name="C:\Users\yacko\Documents\VS2_Buggy\common\src\main\kotlin\org\valkyrienskies\buggy\util\RotShapes.kt">
 		<error line="1" column="1" severity="error" message="File must end with a newline (\n)" source="final-newline" />

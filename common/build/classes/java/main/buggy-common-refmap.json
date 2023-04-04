@@ -2,12 +2,18 @@
   "mappings": {
     "org/valkyrienskies/buggy/mixin/client/MixinDebugRenderer": {
       "render": "Lnet/minecraft/class_863;method_23099(Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;DDD)V"
+    },
+    "org/valkyrienskies/buggy/mixin/server/ServerLinker": {
+      "tick": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V"
     }
   },
   "data": {
     "named:intermediary": {
       "org/valkyrienskies/buggy/mixin/client/MixinDebugRenderer": {
         "render": "Lnet/minecraft/class_863;method_23099(Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;DDD)V"
+      },
+      "org/valkyrienskies/buggy/mixin/server/ServerLinker": {
+        "tick": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V"
       }
     }
   }

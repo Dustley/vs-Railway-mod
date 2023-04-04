@@ -16,7 +16,6 @@ import net.minecraft.world.level.material.Material
 import org.valkyrienskies.buggy.blockentity.seat.SeatBlockEntity
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.nodes.Node
-import org.valkyrienskies.buggy.nodes.types.NodeData
 
 class SeatBlock : BaseEntityBlock(
     Properties.of(Material.STONE)
@@ -62,6 +61,6 @@ class SeatBlock : BaseEntityBlock(
         level.setBlock(pos, state.setValue(BlockStateProperties.POWER, signal), 2)
     }
 
-    override var node: Node = Node(NodeData())
+    override var node: Node = Node()
 
 }

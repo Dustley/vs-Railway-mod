@@ -2,6 +2,9 @@
   "required": true,
   "package": "org.valkyrienskies.buggy.mixin",
   "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "server.ServerLinker"
+  ],
   "client": [
     "client.MixinDebugRenderer"
   ],

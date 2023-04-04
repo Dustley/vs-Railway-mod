@@ -1,5 +1,6 @@
 package org.valkyrienskies.buggy.blocks.motors
 
+import net.minecraft.client.Minecraft
 import net.minecraft.core.BlockPos
 import net.minecraft.server.level.ServerLevel
 import net.minecraft.world.level.Level
@@ -16,7 +17,6 @@ import net.minecraft.world.level.material.Material
 import org.valkyrienskies.buggy.blockentity.seat.SeatBlockEntity
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.nodes.Node
-import org.valkyrienskies.buggy.nodes.types.NodeData
 
 class EngineBlock : BaseEntityBlock(
     Properties.of(Material.STONE)
@@ -46,7 +46,7 @@ class EngineBlock : BaseEntityBlock(
         }
     }
 
-    override var node: Node = Node(NodeData())
+    override var node: Node = Node()
 
     override fun neighborChanged(
         state: BlockState,

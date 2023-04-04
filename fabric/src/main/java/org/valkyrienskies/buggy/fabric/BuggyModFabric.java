@@ -8,6 +8,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import org.valkyrienskies.core.impl.config.VSConfigClass;
 import org.valkyrienskies.buggy.BuggyConfig;
 import org.valkyrienskies.buggy.BuggyMod;

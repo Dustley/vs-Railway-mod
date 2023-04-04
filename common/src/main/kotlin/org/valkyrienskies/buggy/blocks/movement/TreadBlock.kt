@@ -15,13 +15,13 @@ import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.nodes.Node
-import org.valkyrienskies.buggy.nodes.types.NodeData
 import org.valkyrienskies.buggy.ship.TreadShipControl
 import org.valkyrienskies.buggy.util.DirectionalShape
 import org.valkyrienskies.buggy.util.RotShapes
 import org.valkyrienskies.core.api.ships.getAttachment
 import org.valkyrienskies.mod.common.getShipManagingPos
 import org.valkyrienskies.mod.common.getShipObjectManagingPos
+import java.util.*
 
 class TreadBlock : DirectionalBlock(
     Properties.of(Material.STONE)
@@ -54,14 +54,14 @@ class TreadBlock : DirectionalBlock(
     override fun onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, isMoving: Boolean) {
         super.onPlace(state, level, pos, oldState, isMoving)
 
+
+
         if (level.isClientSide) return
         level as ServerLevel
-
-        val signal = level.getBestNeighborSignal(pos)
-        level.setBlock(pos, state.setValue(BlockStateProperties.POWER, signal), 2)
+        node.connectLevel(level)
 
         TreadShipControl.getOrCreate(level.getShipObjectManagingPos(pos) ?: level.getShipManagingPos(pos) ?: return
-        )?.addTread(pos, level, state.getValue(FACING))
+        )?.addTread(pos, level, state.getValue(FACING), node.value)
     }
 
     override fun onRemove(state: BlockState, level: Level, pos: BlockPos, newState: BlockState, isMoving: Boolean) {
@@ -71,7 +71,7 @@ class TreadBlock : DirectionalBlock(
         level as ServerLevel
 
         state.setValue(BlockStateProperties.POWER, 0)
-        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level,state.getValue(FACING))
+        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level, state.getValue(FACING), node.value)
         level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.forceStopTread( pos )
     }
 
@@ -85,10 +85,19 @@ class TreadBlock : DirectionalBlock(
     ) {
         super.neighborChanged(state, level, pos, block, fromPos, isMoving)
 
-        if (level as? ServerLevel == null) return
+        updateList(pos, level, state.getValue(FACING))
+    }
 
-        val signal = level.getBestNeighborSignal(pos)
-        level.setBlock(pos, state.setValue(BlockStateProperties.POWER, signal), 2)
+    fun updateList(pos: BlockPos, level: Level, direction: Direction){
+        if (level.isClientSide) return
+        level as ServerLevel
+
+        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level, direction, node.value)
+        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.forceStopTread( pos )
+
+
+        TreadShipControl.getOrCreate(level.getShipObjectManagingPos(pos) ?: level.getShipManagingPos(pos) ?: return
+        )?.addTread(pos, level, direction, node.value)
     }
 
     override fun getStateForPlacement(ctx: BlockPlaceContext): BlockState {
@@ -96,8 +105,13 @@ class TreadBlock : DirectionalBlock(
             .setValue(FACING, ctx.nearestLookingDirection)
     }
 
-    override var node: Node = Node(NodeData())
+    override var node: Node = Node()
 
+    override fun animateTick(state: BlockState, level: Level, pos: BlockPos, random: Random) {
+        super.animateTick(state, level, pos, random)
+        println("Ticking :D ")
+        node.tick()
+    }
 
 //    override fun animateTick(state: BlockState, level: Level, pos: BlockPos, random: Random) {
 //        super.animateTick(state, level, pos, random)

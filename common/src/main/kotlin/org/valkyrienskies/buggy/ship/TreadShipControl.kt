@@ -22,6 +22,7 @@ import org.valkyrienskies.core.impl.pipelines.SegmentUtils
 import org.valkyrienskies.mod.common.util.toJOML
 import org.valkyrienskies.buggy.BuggyConfig
 import org.valkyrienskies.buggy.api.extension.toPos
+import org.valkyrienskies.buggy.api.utilities.Quadruple
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.mod.common.util.toBlockPos
 import org.valkyrienskies.mod.common.util.toJOMLD
@@ -35,7 +36,7 @@ import java.util.concurrent.CopyOnWriteArrayList
 )
 class TreadShipControl : ShipForcesInducer {
 
-    private val Treads = CopyOnWriteArrayList<Triple<Vector3i, Direction, Level>>()
+    private val Treads = CopyOnWriteArrayList<Quadruple<Vector3i, Direction, Level, Double>>()
 
     override fun applyForces(physShip: PhysShip) {
         if (physShip == null) return
@@ -49,9 +50,9 @@ class TreadShipControl : ShipForcesInducer {
         // https://github.com/ConstantDust/VS2_tournament/blob/main/common/src/main/kotlin/org/valkyrienskies/tournament/blocks/ThrusterBlock.kt
 
         Treads.forEach {
-            val (pos, dir, level) = it
+            val (pos, dir, level, power) = it
 
-            if(level != null && level.isClientSide) return
+            if(level.isClientSide) return
 
             var apForce = Vector3d()
 
@@ -62,35 +63,24 @@ class TreadShipControl : ShipForcesInducer {
 
             //calculate apForce
             if(!level.isEmptyBlock(Vec3d(wPos.x, wPos.y - 1.0, wPos.z).toPos())){
-                val nodeBlock = level.getBlockState(pos.toBlockPos()).block as INodeBlock
-                val nodePower:Double = nodeBlock.node.getData().num ?: 0.0
-                apForce = apForce.add(tForce.mul(BuggyConfig.SERVER.TreadSpeed * nodePower))
+                apForce = apForce.add(tForce.mul(BuggyConfig.SERVER.TreadSpeed * power))
             }
-            
-
-            //TODO("IMPLEMENT BLOCK CLIMBING")
-//            if( (!level.isEmptyBlock( Vec3d(wPos).add(tDir).toPos()) || !level.isEmptyBlock( Vec3d(wPos).sub(tDir).toPos()))){
-//                println("Wall At: " + Vec3d(wPos).add(tDir).toPos() + " = " + level.getBlockState(Vec3d(wPos).add(tDir).toPos()))
-//                println("pos: " + tDir )
-//                apForce = apForce.add( Vector3d(0.0,1.0,0.0).mul(physShip.inertia.shipMass * BuggyConfig.SERVER.TreadClimb * tForce.normalize().length()) )
-//            }
 
 
             //move
             if (apForce.isFinite) {
                 physShip.applyInvariantForceToPos(apForce, tPos.conv())
-                println(apForce)
+                println("tread: " + apForce + " " + power)
             }
         }
-        println()
     }
 
-    fun addTread(pos: BlockPos, level: Level, force: Direction) {
-        Treads.add(Triple(pos.toJOML(), force, level))
+    fun addTread(pos: BlockPos, level: Level, force: Direction, power:Double) {
+        Treads.add(Quadruple(pos.toJOML(), force, level, power))
     }
 
-    fun removeTread(pos: BlockPos, level: Level, force: Direction) {
-        Treads.remove(Triple(pos.toJOML(), force, level))
+    fun removeTread(pos: BlockPos, level: Level, force: Direction, power:Double) {
+        Treads.remove(Quadruple(pos.toJOML(), force, level, power))
     }
 
     fun forceStopTread(pos: BlockPos) {

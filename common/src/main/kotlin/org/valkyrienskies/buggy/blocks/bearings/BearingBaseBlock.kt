@@ -15,8 +15,6 @@ import net.minecraft.world.level.material.Material
 import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
 import org.valkyrienskies.buggy.blockentity.bearing.BearingBlockEntity
-import org.valkyrienskies.buggy.nodes.Node
-import org.valkyrienskies.buggy.nodes.types.NodeData
 import org.valkyrienskies.buggy.util.DirectionalShape
 import org.valkyrienskies.buggy.util.RotShapes
 

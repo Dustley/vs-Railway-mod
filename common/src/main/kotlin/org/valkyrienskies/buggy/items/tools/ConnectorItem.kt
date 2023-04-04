@@ -63,8 +63,7 @@ class ConnectorItem : Item(
 
     fun connectNodes(nodeA:Node, nodeB:Node){
         if (nodeA != nodeB) {
-            nodeA.connectOut(nodeB)
-            nodeB.connectIn(nodeA)
+            nodeA.connectTo(nodeB)
         }
 
         clickedA = null

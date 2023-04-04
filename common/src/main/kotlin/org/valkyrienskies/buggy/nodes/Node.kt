@@ -1,49 +1,36 @@
 package org.valkyrienskies.buggy.nodes
 
-import org.valkyrienskies.buggy.nodes.types.NodeData
+import net.minecraft.server.level.ServerLevel
+import org.valkyrienskies.buggy.mixin.server.ServerNodeLinkerDuck
 
-open class Node(Data:NodeData){
+// Node class with properties and functions
+open class Node() {
 
-    private val data: NodeData = Data
+    var storedValue:Double = 0.0
+    var value: Double = 0.0
 
-    private val nodeId:Long = 0L // not used rn implement later
-    private val nodesIn = ArrayList<Node>()
-    private val nodesOut = ArrayList<Node>()
+    val connectedNodes: MutableList<Node> = mutableListOf()
 
-    // Create connections
-    fun connectIn(node: Node){
-        nodesIn.add(node)
-    }
-    fun connectOut(node: Node){
-        nodesOut.add(node)
-    }
+    fun connectLevel(level: ServerLevel){
+        val linker = level as ServerNodeLinkerDuck
 
-    // Break connections
-        // By reference
-    fun breadkIn(node: Node){
-        nodesIn.remove(node)
-    }
-    fun breakOut(node: Node){
-        nodesOut.remove(node)
-    }
-        // By Array Id
-    fun breadkIn(node: Int){
-        nodesIn.remove(nodesIn[node])
-    }
-    fun breakOut(node: Int){
-        nodesOut.remove(nodesOut[node])
+        linker.addServerNode(this)
     }
 
-    // Global Data
-    fun getData():NodeData {
-        return data
-    }
-    fun getId():Long {
-        return nodeId
+    fun connectTo(node: Node) {
+        connectedNodes.add(node)
     }
 
-    // Fed in value
-    open fun numberOperation(inData: ArrayList<Double>):Double { return inData[0] }
-    open fun stringOperation(inData: ArrayList<String>):String { return inData[0] }
-    open fun booleanOperation(inData: ArrayList<Boolean>):Boolean { return inData[0] }
+    fun disconnectFrom(node: Node) {
+        connectedNodes.remove(node)
+    }
+
+    open fun computeValue(): Double {
+        return value
+    }
+
+    fun tick() {
+        value = storedValue
+        storedValue = computeValue()
+    }
 }

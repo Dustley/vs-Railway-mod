@@ -5,44 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8841c51b-2dfb-44fb-b37d-31d989f930c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/engine/ShipForceInducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/engine/ShipNameManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/types/ShipHitResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/logic/PowerEmitBlock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/INodeBlock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/Node.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/types/AdditionNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/types/NodeData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client___fabric__fabric.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/valkyrienskies/buggy/mixin/server/ServerLinker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/valkyrienskies/buggy/mixin/server/ServerNodeLinkerDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/types/AddingNode.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/types/EmitterNode.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/PhysicUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/PhysicUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/engine/commands/ContraptionCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/engine/commands/ContraptionIdArgument$ContraptionSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/engine/commands/ContraptionIdArgument.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/types/ContraptionHitResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/types/ContraptionPosition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BEARING$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$BEARING$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/BuggyCommands.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/NodeBlock$DefaultImpls.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/NodeBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/buggy-common-refmap.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/buggy-common-refmap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/physics/PhysicUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/util/GameUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/util/MathUtility$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/util/MathUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/util/NBTUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/util/StructureFinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/de/m_marvin/industria/core/util/VoxelShapeUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/org/valkyrienskies/buggy/mixin/client/MixinDebugRenderer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/motors/EngineBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/motors/EngineBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/movement/TreadBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/movement/TreadBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/seats/SeatBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/blocks/seats/SeatBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/items/tools/ConnectorItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/items/tools/ConnectorItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/SimpleShipControl$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/SimpleShipControl$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/SimpleShipControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/SimpleShipControl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/TreadShipControl$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/TreadShipControl$Companion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/TreadShipControl$forceStopTread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/TreadShipControl$forceStopTread$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/TreadShipControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/ship/TreadShipControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/util/Connection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/util/Node$Values.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/classes/kotlin/main/org/valkyrienskies/buggy/util/Node.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/devlibs/buggy-1.0.0-beta.1-dev.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/devlibs/buggy-1.0.0-beta.1-dev.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/buggy100beta1devjar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/buggy100beta1devjar-classes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
@@ -63,6 +47,7 @@
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
@@ -73,7 +58,9 @@
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
@@ -109,28 +96,23 @@
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/resources/main/assets/vs_buggy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/resources/main/assets/vs_buggy/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/PhysicUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/PhysicUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/engine/commands/ContraptionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/engine/commands/ShipCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/engine/commands/ContraptionIdArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/types/ContraptionHitResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/types/ContraptionPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/de/m_marvin/industria/core/physics/types/ShipPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/BuggyBlocks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/BuggyBlocks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/BuggyCommands.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/NodeBlock.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/resources/main/vs_buggy-common.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/resources/main/vs_buggy-common.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/logic/PowerEmitBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/logic/PowerEmitBlock.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/motors/EngineBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/motors/EngineBlock.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/movement/TreadBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/movement/TreadBlock.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/seats/SeatBlock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/blocks/seats/SeatBlock.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/items/tools/ConnectorItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/items/tools/ConnectorItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/ship/SimpleShipControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/ship/SimpleShipControl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/Node.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/types/AdditionNode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/nodes/types/NodeData.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/ship/TreadShipControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/ship/TreadShipControl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/util/Connection.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/org/valkyrienskies/buggy/util/Node.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/assets/vs_buggy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/assets/vs_buggy/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/vs_buggy-common.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/vs_buggy-common.mixins.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fabric/build/classes/java/main/org/valkyrienskies/buggy/fabric/BuggyModFabric$Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/build/classes/java/main/org/valkyrienskies/buggy/fabric/BuggyModFabric$Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fabric/build/classes/java/main/org/valkyrienskies/buggy/fabric/BuggyModFabric$ModMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/build/classes/java/main/org/valkyrienskies/buggy/fabric/BuggyModFabric$ModMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fabric/build/classes/java/main/org/valkyrienskies/buggy/fabric/BuggyModFabric.class" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/build/classes/java/main/org/valkyrienskies/buggy/fabric/BuggyModFabric.class" afterDir="false" />
@@ -171,10 +153,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -192,13 +175,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/Users/yacko/Documents/VS2_Buggy/common/src/main/kotlin/org/valkyrienskies/buggy/nodes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/yacko/Documents/VS2_Buggy/common/src/main/kotlin/org/valkyrienskies/buggy/nodes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="org.valkyrienskies.buggy.nodes.types" />
