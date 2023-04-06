@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vs_takeoff:block/emmitor",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "vs_takeoff:block/emmitor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vs_takeoff:block/emmitor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vs_takeoff:block/emmitor",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "vs_takeoff:block/emmitor",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "vs_takeoff:block/emmitor",
+      "x": 90
+    }
+  }
+}

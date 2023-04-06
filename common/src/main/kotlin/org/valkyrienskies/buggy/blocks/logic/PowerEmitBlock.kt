@@ -25,7 +25,7 @@ class PowerEmitBlock : DirectionalBlock(
         .sound(SoundType.STONE).strength(1.0f, 2.0f)
 ), INodeBlock {
 
-    val SHAPE = RotShapes.box(3.0, 5.0, 4.0, 13.0, 11.0, 16.0)
+    val SHAPE = RotShapes.box(1.0, 1.0, 1.0, 15.0, 15.0, 15.0)
     val Emmitor_SHAPE = DirectionalShape.south(SHAPE)
 
     init {
@@ -58,19 +58,15 @@ class PowerEmitBlock : DirectionalBlock(
 
         if (level.isClientSide) return
         level as ServerLevel
-        node.connectLevel(level)
+        node.connectLevel(level, pos)
+    }
+
+    override fun onRemove(state: BlockState, level: Level, pos: BlockPos, newState: BlockState, isMoving: Boolean) {
+        super.onRemove(state, level, pos, newState, isMoving)
+
+        node.destroyNode(level as ServerLevel, pos)
     }
 
     override var node: Node = EmitterNode()
 
-    override fun neighborChanged(
-        state: BlockState,
-        level: Level,
-        pos: BlockPos,
-        block: Block,
-        fromPos: BlockPos,
-        isMoving: Boolean
-    ) {
-        super.neighborChanged(state, level, pos, block, fromPos, isMoving)
-    }
 }

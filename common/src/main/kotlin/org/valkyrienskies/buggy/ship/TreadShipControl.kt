@@ -24,6 +24,7 @@ import org.valkyrienskies.buggy.BuggyConfig
 import org.valkyrienskies.buggy.api.extension.toPos
 import org.valkyrienskies.buggy.api.utilities.Quadruple
 import org.valkyrienskies.buggy.nodes.INodeBlock
+import org.valkyrienskies.buggy.nodes.Node
 import org.valkyrienskies.mod.common.util.toBlockPos
 import org.valkyrienskies.mod.common.util.toJOMLD
 import java.util.concurrent.CopyOnWriteArrayList
@@ -36,7 +37,7 @@ import java.util.concurrent.CopyOnWriteArrayList
 )
 class TreadShipControl : ShipForcesInducer {
 
-    private val Treads = CopyOnWriteArrayList<Quadruple<Vector3i, Direction, Level, Double>>()
+    private val Treads = CopyOnWriteArrayList<Quadruple<Vector3i, Direction, Level, Node>>()
 
     override fun applyForces(physShip: PhysShip) {
         if (physShip == null) return
@@ -50,37 +51,36 @@ class TreadShipControl : ShipForcesInducer {
         // https://github.com/ConstantDust/VS2_tournament/blob/main/common/src/main/kotlin/org/valkyrienskies/tournament/blocks/ThrusterBlock.kt
 
         Treads.forEach {
-            val (pos, dir, level, power) = it
+            val (pos, dir, level, node) = it
 
             if(level.isClientSide) return
 
             var apForce = Vector3d()
 
             val tDir = physShip.transform.shipToWorld.transformDirection(dir.normal.toJOMLD())
-            val tForce = tDir.mul(level.getBlockState(pos.toBlockPos()).getValue(BlockStateProperties.POWER).toDouble(), Vector3d())
             val tPos = Vec3d(pos).add(0.5, 0.5, 0.5).sub(Vec3d().readFrom(physShip.transform.positionInShip))
             val wPos = Vector3d(physShip.transform.shipToWorld.transformPosition(Vector3d(pos.x.toDouble() + 0.5,pos.y.toDouble()+ 0.5 ,pos.z.toDouble() + 0.5)))
 
             //calculate apForce
             if(!level.isEmptyBlock(Vec3d(wPos.x, wPos.y - 1.0, wPos.z).toPos())){
-                apForce = apForce.add(tForce.mul(BuggyConfig.SERVER.TreadSpeed * power))
+                apForce = apForce.add(tDir.mul(BuggyConfig.SERVER.TreadSpeed * node.value, Vector3d()))
             }
 
 
             //move
             if (apForce.isFinite) {
                 physShip.applyInvariantForceToPos(apForce, tPos.conv())
-                println("tread: " + apForce + " " + power)
+                println("tread: " + apForce + " " + node.value)
             }
         }
     }
 
-    fun addTread(pos: BlockPos, level: Level, force: Direction, power:Double) {
-        Treads.add(Quadruple(pos.toJOML(), force, level, power))
+    fun addTread(pos: BlockPos, level: Level, force: Direction, bclass: Node) {
+        Treads.add(Quadruple(pos.toJOML(), force, level, bclass))
     }
 
-    fun removeTread(pos: BlockPos, level: Level, force: Direction, power:Double) {
-        Treads.remove(Quadruple(pos.toJOML(), force, level, power))
+    fun removeTread(pos: BlockPos, level: Level, force: Direction, bclass:Node) {
+        Treads.remove(Quadruple(pos.toJOML(), force, level, bclass))
     }
 
     fun forceStopTread(pos: BlockPos) {

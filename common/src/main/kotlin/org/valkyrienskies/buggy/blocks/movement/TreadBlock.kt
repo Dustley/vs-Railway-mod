@@ -58,10 +58,10 @@ class TreadBlock : DirectionalBlock(
 
         if (level.isClientSide) return
         level as ServerLevel
-        node.connectLevel(level)
+        node.connectLevel(level, pos)
 
         TreadShipControl.getOrCreate(level.getShipObjectManagingPos(pos) ?: level.getShipManagingPos(pos) ?: return
-        )?.addTread(pos, level, state.getValue(FACING), node.value)
+        ).addTread(pos, level, state.getValue(FACING), node)
     }
 
     override fun onRemove(state: BlockState, level: Level, pos: BlockPos, newState: BlockState, isMoving: Boolean) {
@@ -69,9 +69,10 @@ class TreadBlock : DirectionalBlock(
 
         if (level.isClientSide) return
         level as ServerLevel
+        node.destroyNode(level, pos)
 
         state.setValue(BlockStateProperties.POWER, 0)
-        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level, state.getValue(FACING), node.value)
+        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level, state.getValue(FACING), node)
         level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.forceStopTread( pos )
     }
 
@@ -92,12 +93,12 @@ class TreadBlock : DirectionalBlock(
         if (level.isClientSide) return
         level as ServerLevel
 
-        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level, direction, node.value)
+        level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.removeTread(pos, level, direction, node)
         level.getShipManagingPos(pos)?.getAttachment<TreadShipControl>()?.forceStopTread( pos )
 
 
         TreadShipControl.getOrCreate(level.getShipObjectManagingPos(pos) ?: level.getShipManagingPos(pos) ?: return
-        )?.addTread(pos, level, direction, node.value)
+        )?.addTread(pos, level, direction, node)
     }
 
     override fun getStateForPlacement(ctx: BlockPlaceContext): BlockState {
@@ -106,24 +107,5 @@ class TreadBlock : DirectionalBlock(
     }
 
     override var node: Node = Node()
-
-    override fun animateTick(state: BlockState, level: Level, pos: BlockPos, random: Random) {
-        super.animateTick(state, level, pos, random)
-        println("Ticking :D ")
-        node.tick()
-    }
-
-//    override fun animateTick(state: BlockState, level: Level, pos: BlockPos, random: Random) {
-//        super.animateTick(state, level, pos, random)
-//        if (state.getValue(BlockStateProperties.POWER) > 0) {
-//            val dir = state.getValue(FACING)
-//
-//            val x = pos.x.toDouble() + (0.5 * (dir.stepX + 1));
-//            val y = pos.y.toDouble() + (0.5 * (dir.stepY + 1));
-//            val z = pos.z.toDouble() + (0.5 * (dir.stepZ + 1));
-//
-//            level.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 0.0, 0.0, 0.0)
-//        }
-//    }
 
 }
