@@ -21,13 +21,18 @@ object BuggyItems {
             BuggyMod.MOD_ID,
             "buggy_tab"
         )
-    ) { ItemStack(Blocks.IRON_BLOCK) }
+    ) { ItemStack(BuggyBlocks.EMMITOR.get()) }
+
 
     val TOOL_CONNECTOR                    = ITEMS.register("connector", ::ConnectorItem)
-//    val TOOL_PULSEGUN           = ITEMS.register("pulse_gun", ::PulseGunItem)
-//    val TOOL_DELETEWAND         = ITEMS.register("delete_wand", ::ShipDeleteWandItem)
-//    val TOOL_GRABGUN            = ITEMS.register("grab_gun", ::GrabGunItem)
-//    val UPGRADE_THRUSTER        = ITEMS.register("upgrade_thruster", ::ThrusterUpgradeItem)
+
+
+    val NODE_TAB: CreativeModeTab = CreativeTabs.create(
+        ResourceLocation(
+            BuggyMod.MOD_ID,
+            "buggy_node_tab"
+        )
+    ) { ItemStack(TOOL_CONNECTOR.get()) }
 
     fun register() {
         BuggyBlocks.registerItems(ITEMS)

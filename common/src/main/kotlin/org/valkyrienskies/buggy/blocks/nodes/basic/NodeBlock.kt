@@ -1,4 +1,4 @@
-package org.valkyrienskies.buggy.blocks.logic
+package org.valkyrienskies.buggy.blocks.nodes.basic
 
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
@@ -15,12 +15,10 @@ import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.nodes.Node
-import org.valkyrienskies.buggy.nodes.types.EmitterNode
 import org.valkyrienskies.buggy.util.DirectionalShape
 import org.valkyrienskies.buggy.util.RotShapes
-import java.util.*
 
-class PowerEmitBlock : DirectionalBlock(
+class NodeBlock : DirectionalBlock(
     Properties.of(Material.STONE)
         .sound(SoundType.STONE).strength(1.0f, 2.0f)
 ), INodeBlock {
@@ -67,6 +65,6 @@ class PowerEmitBlock : DirectionalBlock(
         node.destroyNode(level as ServerLevel, pos)
     }
 
-    override var node: Node = EmitterNode()
+    override var node: Node = Node()
 
 }

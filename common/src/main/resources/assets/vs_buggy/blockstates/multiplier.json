@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vs_buggy:block/multiplier",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "vs_buggy:block/multiplier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vs_buggy:block/multiplier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vs_buggy:block/multiplier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "vs_buggy:block/multiplier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "vs_buggy:block/multiplier",
+      "x": 90
+    }
+  }
+}

@@ -6,11 +6,18 @@ import net.minecraft.world.item.Item
 import org.valkyrienskies.buggy.blocks.*
 import org.valkyrienskies.buggy.blocks.bearings.BearingBaseBlock
 import org.valkyrienskies.buggy.blocks.MechanicalTopBlock
-import org.valkyrienskies.buggy.blocks.logic.PowerEmitBlock
+import org.valkyrienskies.buggy.blocks.nodes.basic.PowerEmitBlock
 import org.valkyrienskies.buggy.blocks.motors.EngineBlock
 import org.valkyrienskies.buggy.blocks.movement.TreadBlock
+import org.valkyrienskies.buggy.blocks.nodes.arithmetic.AddingBlock
+import org.valkyrienskies.buggy.blocks.nodes.arithmetic.InvertingBlock
+import org.valkyrienskies.buggy.blocks.nodes.arithmetic.MultiplyingBlock
+import org.valkyrienskies.buggy.blocks.nodes.basic.DisplayBlock
+import org.valkyrienskies.buggy.blocks.nodes.basic.SwitchEmitBlock
+import org.valkyrienskies.buggy.blocks.nodes.basic.NodeBlock
 import org.valkyrienskies.buggy.blocks.seats.SeatBlock
 import org.valkyrienskies.buggy.blocks.springs.SpringBaseBlock
+import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.registry.DeferredRegister
 
 @Suppress("unused")
@@ -37,7 +44,20 @@ object BuggyBlocks {
     val MECHANICAL_TOP              = BLOCKS.register("mechanical_top", ::MechanicalTopBlock)
 
     val BASIC_TREAD                 = BLOCKS.register("basic_tread", ::TreadBlock)
+
+    // NODES
+        // Basic
     val EMMITOR                     = BLOCKS.register("emmitor", ::PowerEmitBlock)
+    val WEAKEMMITOR                 = BLOCKS.register("weak_emmitor", ::NodeBlock)
+    val SWITCH                      = BLOCKS.register("switch", ::SwitchEmitBlock)
+    val DISPLAYBLOCK                = BLOCKS.register("display", ::DisplayBlock)
+
+        // Math
+    val ADDINGBLOCK                 = BLOCKS.register("adder", ::AddingBlock)
+    val SUBTRACTBLOCK               = BLOCKS.register("subtract", ::AddingBlock)
+    val MULTIPLYBLOCK               = BLOCKS.register("multiplier", ::MultiplyingBlock)
+    val INVERTINGBLOCK              = BLOCKS.register("inverter", ::InvertingBlock)
+
 
     fun register() {
         BLOCKS.applyAll()
@@ -46,7 +66,11 @@ object BuggyBlocks {
     fun registerItems(items: DeferredRegister<Item>) {
         BLOCKS.forEach {
             if (it != MECHANICAL_TOP ){
-                items.register(it.name) { BlockItem(it.get(), Item.Properties().tab(BuggyItems.TAB)) }
+                if (it.get() is INodeBlock) {
+                    items.register(it.name) { BlockItem(it.get(), Item.Properties().tab(BuggyItems.NODE_TAB)) }
+                } else {
+                    items.register(it.name) { BlockItem(it.get(), Item.Properties().tab(BuggyItems.TAB)) }
+                }
             }
         }
     }

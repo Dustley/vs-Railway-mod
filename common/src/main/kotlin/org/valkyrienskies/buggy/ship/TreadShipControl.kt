@@ -37,7 +37,7 @@ import java.util.concurrent.CopyOnWriteArrayList
 )
 class TreadShipControl : ShipForcesInducer {
 
-    private val Treads = CopyOnWriteArrayList<Quadruple<Vector3i, Direction, Level, Node>>()
+    private val Treads = mutableListOf<Quadruple<Vector3i, Direction, Level, Node>>()
 
     override fun applyForces(physShip: PhysShip) {
         if (physShip == null) return
@@ -70,7 +70,7 @@ class TreadShipControl : ShipForcesInducer {
             //move
             if (apForce.isFinite) {
                 physShip.applyInvariantForceToPos(apForce, tPos.conv())
-                println("tread: " + apForce + " " + node.value)
+                //println("tread: " + apForce + " " + node.value)
             }
         }
     }

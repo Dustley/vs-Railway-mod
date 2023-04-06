@@ -1,5 +1,6 @@
 {
   "itemGroup.vs_buggy.buggy_tab": "VS Buggy",
+  "itemGroup.vs_buggy.buggy_node_tab": "VS Buggy Nodes",
 
   "buggy.commands.ship.remove.success":	    "success",
   "buggy.commands.ship.create.failed":		"Creation failed!",

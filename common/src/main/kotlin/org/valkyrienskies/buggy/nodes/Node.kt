@@ -12,6 +12,7 @@ open class Node() {
     var value: Double = 0.0
 
     val connectedNodes: MutableList<Node> = mutableListOf()
+    val connectedValues: MutableList<Node> = mutableListOf()
 
     fun connectLevel(level: ServerLevel, pos: BlockPos){
         val linker = level as ServerNodeLinkerDuck
@@ -21,16 +22,20 @@ open class Node() {
     }
 
     fun destroyNode(level: ServerLevel, pos: BlockPos){
+        connectedNodes.forEach { disconnectFrom(it) }
+
         val linker = level as ServerNodeLinkerDuck
         linker.removeServerNode(this, pos)
     }
 
     fun connectTo(node: Node) {
         connectedNodes.add(node)
+        node.connectedValues.add(this)
     }
 
     fun disconnectFrom(node: Node) {
         connectedNodes.remove(node)
+        node.connectedValues.remove(this)
     }
 
     open fun computeValue(): Double {
@@ -42,9 +47,9 @@ open class Node() {
         storedValue = computeValue()
 
         connectedNodes.forEach {
-            it.storedValue = value
+            it.storedValue = computeValue()
         }
 
-        println("NODE -> " + Pos.toString() + " " + value)
+        //println("NODE -> " + Pos.toString() + " " + value)
     }
 }

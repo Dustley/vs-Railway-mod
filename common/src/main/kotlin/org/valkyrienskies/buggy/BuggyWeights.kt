@@ -4,6 +4,7 @@ import net.minecraft.core.Registry
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
+import org.valkyrienskies.buggy.blocks.INoCollision
 import org.valkyrienskies.core.apigame.world.chunks.BlockType
 import org.valkyrienskies.mod.common.BlockStateInfo
 import org.valkyrienskies.mod.common.BlockStateInfoProvider
@@ -18,13 +19,13 @@ object BuggyWeights : BlockStateInfoProvider {
     }
 
     override fun getBlockStateType(blockState: BlockState): BlockType? {
-        if (blockState.block == BuggyBlocks.MECHANICAL_TOP.get())
+        if (blockState.block is INoCollision)
             return vsCore.blockTypes.air
 
         return null
     }
 
     fun register() {
-        Registry.register(BlockStateInfo.REGISTRY, ResourceLocation(BuggyMod.MOD_ID, "bearing"), BuggyWeights)
+        Registry.register(BlockStateInfo.REGISTRY, ResourceLocation(BuggyMod.MOD_ID, "mechanical"), BuggyWeights)
     }
 }

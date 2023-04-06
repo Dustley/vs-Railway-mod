@@ -14,7 +14,7 @@ object BuggyConfig {
     class Server {
 
         @JsonSchema(description = "The Force a Tread will output when moving")
-        var TreadSpeed = 1000.0
+        var TreadSpeed = 5000.0
 
         @JsonSchema(description = "The Force a Tread will output when moving up a block")
         var TreadClimb = 5.5

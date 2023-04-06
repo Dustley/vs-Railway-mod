@@ -14,6 +14,7 @@ import net.minecraft.world.level.Level
 import org.valkyrienskies.buggy.BuggyItems
 import org.valkyrienskies.buggy.nodes.INodeBlock
 import org.valkyrienskies.buggy.nodes.Node
+import kotlin.random.Random
 
 class ConnectorItem : Item(
     Properties().stacksTo(1).tab(BuggyItems.TAB)
@@ -54,7 +55,7 @@ class ConnectorItem : Item(
 
         // reset after both nodes linked
         if (clickedA != null && clickedB != null) {
-            level.addParticle(ParticleTypes.CRIT,
+            level.addParticle(ParticleTypes.ENCHANTED_HIT,
                 pos.x.toDouble() + 0.5,
                 pos.y.toDouble() + 1.0,
                 pos.z.toDouble() + 0.5,
@@ -71,10 +72,10 @@ class ConnectorItem : Item(
 
         if(clickedName != null) {
             level.addParticle(ParticleTypes.ELECTRIC_SPARK,
-                clickedName!!.x.toDouble() + 0.5,
-                clickedName!!.y.toDouble() + 1.0,
-                clickedName!!.z.toDouble() + 0.5,
-                0.0, 2.0, 0.0)
+                clickedName!!.x.toDouble() + Random.nextInt(0,1).toDouble(),
+                clickedName!!.y.toDouble() + Random.nextInt(0,1).toDouble(),
+                clickedName!!.z.toDouble() + Random.nextInt(0,1).toDouble(),
+                Random.nextDouble(-0.5,0.5), Random.nextDouble(-0.5,0.5), Random.nextDouble(-0.5,0.5))
         }
     }
 

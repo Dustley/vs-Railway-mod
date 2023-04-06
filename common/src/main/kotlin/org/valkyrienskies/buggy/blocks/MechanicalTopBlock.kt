@@ -17,7 +17,7 @@ import org.valkyrienskies.buggy.util.DirectionalShape
 import org.valkyrienskies.buggy.util.RotShapes
 
 
-class MechanicalTopBlock : DirectionalBlock(Properties.of(Material.BAMBOO)) {
+class MechanicalTopBlock : DirectionalBlock(Properties.of(Material.BAMBOO)), INoCollision {
     val BEARING_FLAT = RotShapes.box(0.5, 0.25, 0.5, 15.5, 2.75, 15.5)
     //val BEARING_SLOT = RotShapes.box(7.0, 2.0, 14.0, 9.0, 24.0, 16.0)
 
