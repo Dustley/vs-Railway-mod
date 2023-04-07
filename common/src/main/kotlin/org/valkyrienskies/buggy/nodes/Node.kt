@@ -5,6 +5,7 @@ import net.minecraft.server.level.ServerLevel
 import org.valkyrienskies.buggy.mixinducks.server.ServerNodeLinkerDuck
 
 // Node class with properties and functions
+@Deprecated("java nodes new")
 open class Node() {
 
     var storedValue:Double = 0.0
