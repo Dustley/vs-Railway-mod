@@ -2,6 +2,7 @@ package org.valkyrienskies.buggy
 
 import net.minecraft.core.Registry
 import net.minecraft.resources.ResourceLocation
+import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
@@ -15,14 +16,12 @@ import org.valkyrienskies.buggy.registry.DeferredRegister
 object BuggyItems {
     private val ITEMS = DeferredRegister.create(BuggyMod.MOD_ID, Registry.ITEM_REGISTRY)
 
-    // moved so items can be in tab
     val TAB: CreativeModeTab = CreativeTabs.create(
         ResourceLocation(
             BuggyMod.MOD_ID,
             "buggy_tab"
         )
-    ) { ItemStack(BuggyBlocks.EMMITOR.get()) }
-
+    ) { ItemStack(Blocks.CHAIN) }
 
     val TOOL_CONNECTOR                    = ITEMS.register("connector", ::ConnectorItem)
 

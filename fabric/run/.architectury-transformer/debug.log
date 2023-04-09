@@ -174,24 +174,24 @@
 [Architectury Transformer DEBUG]  - C:\Users\yacko\Documents\VS2_Buggy\.gradle\loom-cache\remapped_mods\loom_mappings_1_18_2_layered_hash_1101543159_v2\maven\modrinth\lazydfu\0.1.2\lazydfu-0.1.2.jar
 [Architectury Transformer DEBUG]  - C:\Users\yacko\Documents\VS2_Buggy\.gradle\loom-cache\remapped_mods\loom_mappings_1_18_2_layered_hash_1101543159_v2\net\fabricmc\fabric-api\fabric-block-api-v1\1.0.0+ee3621fc60\fabric-block-api-v1-1.0.0+ee3621fc60.jar
 [Architectury Transformer DEBUG]  - C:\Users\yacko\Documents\VS2_Buggy\.gradle\loom-cache\remapped_mods\loom_mappings_1_18_2_layered_hash_1101543159_v2\me\shedaniel\cloth\cloth-config\6.4.90\cloth-config-6.4.90.jar
-[Architectury Transformer] Read classpath in 2.002 s
+[Architectury Transformer] Read classpath in 1.929 s
 [Architectury Transformer DEBUG] Closed File Systems for C:\Users\yacko\Documents\VS2_Buggy\common\build\devlibs\buggy-1.0.0-beta.1-dev.jar
-[Architectury Transformer DEBUG] Transforming 5 transformer(s) from C:\Users\yacko\Documents\VS2_Buggy\common\build\devlibs\buggy-1.0.0-beta.1-dev.jar to C:\Users\yacko\AppData\Local\Temp\5149876242680464657.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@1e467b90
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@33f19df2
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@9201d97
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@6c6c031d
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@41db7ffb
-[Architectury Transformer DEBUG] Transforming from C:\Users\yacko\Documents\VS2_Buggy\common\build\devlibs\buggy-1.0.0-beta.1-dev.jar to C:\Users\yacko\AppData\Local\Temp\5149876242680464657.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 5 transformer(s) from C:\Users\yacko\Documents\VS2_Buggy\common\build\devlibs\buggy-1.0.0-beta.1-dev.jar to C:\Users\yacko\AppData\Local\Temp\17860370350598900769.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@71cd382e
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@40f945b9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@b507054
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@30cfa5ec
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@28dbe793
+[Architectury Transformer DEBUG] Transforming from C:\Users\yacko\Documents\VS2_Buggy\common\build\devlibs\buggy-1.0.0-beta.1-dev.jar to C:\Users\yacko\AppData\Local\Temp\17860370350598900769.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@685d025
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3f90a912
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/PhysicUtility with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/ShipForceInducer$Force with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/ShipForceInducer$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/ShipForceInducer$ForceType with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/ShipForceInducer$Force with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/ShipForceInducer with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/ShipNameManager with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument with maxs=true frames=true
@@ -200,65 +200,62 @@
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/types/ShipPosition with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/types/ShipHitResult with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/NBTUtility with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/GameUtility with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/MathUtility$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/VoxelShapeUtility with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/StructureFinder with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/GameUtility with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/MathUtility with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/MathUtility$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/util/StructureFinder with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig$Client with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyMod with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyEntitiesKt with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BEARING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyDebugHelper with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyDebugHelper$Companion with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$TAB$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig$Client with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_SEAT$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ToRegEntityRenderer with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$INVERTINGBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$MECHANICAL_TOP$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$EMMITINGBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyDebugHelper with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyClientScreensKt with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyDebugHelper$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYINGBLOCK$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyProperties with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyMod with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyScreensKt with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$2 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyClientScreens with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyEntities$byName$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyScreensKt with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ClientScreenRegistar with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$WEAKEMMITOR$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ToRegEntityRenderer with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$EMMITOR$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyClientScreens with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTINGBLOCK$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyScreens$withName$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SPRING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_ENGINE$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig$Server with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ClientScreenRegistar with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$NODE_TAB$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$BEARING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyWeights with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyEntities with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SWITCH$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$SPRING$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyWeights with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$byName$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyScreens with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig$Server with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$byName$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$byName$1 with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixin/client/MixinDebugRenderer with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixin/server/ServerLinker with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixinducks/server/ServerNodeLinkerDuck with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/algo/Algo2d with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixin/server/PALNetworkMixin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixinducks/server/PALNetworkDuck with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/Link with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PALNetwork$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/Pin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinType with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PALNetwork with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/SubtractingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/EmmitingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/MultiplyingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/DisplayPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/AddingPin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/algo/Algo3d with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/debug/Debug4CR with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/algo/Algo2d with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/debug/DebugRect with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/debug/DebugObjectIDKt with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/debug/Debug4CR with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/debug/DebugObject with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/debug/DebugLine with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/extension/Vector3dExtensionKt with maxs=true frames=true
@@ -266,781 +263,564 @@
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/helper/Helper2d with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/helper/Helper3d with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/utilities/Quadruple with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/utilities/QuintupleKt with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/utilities/Quintuple with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/utilities/QuadrupleKt with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/bearing/BearingBlockEntity$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/bearing/BearingBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/motors/EngineBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/motors/EngineBlockEntity$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/seat/SeatBlockEntity$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/seat/SeatBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/springs/SpringBlockEntity$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/springs/SpringBlockEntity with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/MechanicalTopBlock with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/INoCollision with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/motors/EngineBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/movement/TreadBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/arithmetic/AddingBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/arithmetic/MultiplyingBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/arithmetic/InvertingBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/NodeBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/SwitchEmitBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/PowerEmitBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/DisplayBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/seats/SeatBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/springs/SpringBaseBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/NodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/DisplayNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/AddingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/MultiplyingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/EmmitingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/SubtractingNodeBlock with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/items/tools/ConnectorItem with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/Node with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/INodeBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/RoundingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/AbsNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/DividingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/MultiplyingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/InvertNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/TanNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/CosNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/RemainderNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/SubtractingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/SinNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/AddingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/basic/DisplayNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/basic/EmitterNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/logic/EqualNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/logic/AndNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/logic/XorNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/logic/NotNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/logic/OrNode with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/DeferredRegister with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/DeferredRegister$Companion with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/CreativeTabs with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/RegistrySupplier with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/CreativeTabs$Companion with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/RegistrySupplier with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/services/DeferredRegisterBackend with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/services/BuggyPlatformHelper with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/PulseShipControl$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/PulseShipControl with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/TreadShipControl with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/TreadShipControl$forceStopTread$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/SimpleShipControl with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/SimpleShipControl$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/TreadShipControl$Companion with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/ship/SimpleShipControl with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShape with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/ClonedKtContainerData with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/IKtContainerData with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShapes$Box with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape$WhenMappings with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/KtContainerData with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/GuiUtilKt with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShapes with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShapes$Union with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/KtContainerData with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape$Companion with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/GuiUtilKt with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShapes with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShape$DefaultImpls with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/ContainerDataDelegate with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /buggy-common-refmap.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /architectury.common.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /vs_buggy-common.mixins.json is a mixin config.
-[Architectury Transformer DEBUG] Closed File Systems for C:\Users\yacko\AppData\Local\Temp\5149876242680464657.jar
+[Architectury Transformer DEBUG] Closed File Systems for C:\Users\yacko\AppData\Local\Temp\17860370350598900769.jar
 [Architectury Transformer] Listening at C:\Users\yacko\Documents\VS2_Buggy\common\build\devlibs\buggy-1.0.0-beta.1-dev.jar
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/mixinducks/server/ServerNodeLinkerDuck.class to org/valkyrienskies/buggy/mixinducks/server/ServerNodeLinkerDuck.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/mixinducks/server/PALNetworkDuck.class to org/valkyrienskies/buggy/mixinducks/server/PALNetworkDuck.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2d9f9fe9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1745c964
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixinducks/server/ServerNodeLinkerDuck with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/mixinducks/server/ServerNodeLinkerDuck in 86.35 ms
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/mixinducks/server/PALNetworkDuck with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/mixinducks/server/PALNetworkDuck in 79.61 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PALNetwork.class to org/valkyrienskies/buggy/PAL/PALNetwork.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@16197dad
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PALNetwork with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PALNetwork in 44.90 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/Pin.class to org/valkyrienskies/buggy/PAL/Pin.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@213ded5e
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/Pin with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/Pin in 36.95 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PinTypes/AddingPin.class to org/valkyrienskies/buggy/PAL/PinTypes/AddingPin.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@42a490c4
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/AddingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PinTypes/AddingPin in 40.18 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PinTypes/SubtractingPin.class to org/valkyrienskies/buggy/PAL/PinTypes/SubtractingPin.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3acca032
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/SubtractingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PinTypes/SubtractingPin in 34.98 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PinTypes/MultiplyingPin.class to org/valkyrienskies/buggy/PAL/PinTypes/MultiplyingPin.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7b1d0648
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/MultiplyingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PinTypes/MultiplyingPin in 31.59 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PinTypes/EmmitingPin.class to org/valkyrienskies/buggy/PAL/PinTypes/EmmitingPin.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@44305a88
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/EmmitingPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PinTypes/EmmitingPin in 29.15 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PinTypes/DisplayPin.class to org/valkyrienskies/buggy/PAL/PinTypes/DisplayPin.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@52120fe
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinTypes/DisplayPin with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PinTypes/DisplayPin in 29.72 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyMod.class to org/valkyrienskies/buggy/BuggyMod.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@66a68118
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@230e69e
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyMod with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyMod in 57.40 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyMod in 36.37 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks.class to org/valkyrienskies/buggy/BuggyBlocks.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3b25b3b3
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5670648
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks in 45.76 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks in 33.30 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/registry/DeferredRegister.class to org/valkyrienskies/buggy/registry/DeferredRegister.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2f27a04b
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7243e300
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/DeferredRegister with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/DeferredRegister in 51.48 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/DeferredRegister in 31.37 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/registry/DeferredRegister$Companion.class to org/valkyrienskies/buggy/registry/DeferredRegister$Companion.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1295ba9c
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6774ab4b
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/DeferredRegister$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/DeferredRegister$Companion in 39.06 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/DeferredRegister$Companion in 31.58 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/services/DeferredRegisterBackend.class to org/valkyrienskies/buggy/services/DeferredRegisterBackend.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@77683d07
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@261c599c
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/services/DeferredRegisterBackend with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/services/DeferredRegisterBackend in 53.66 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/services/DeferredRegisterBackend in 29.38 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/registry/RegistrySupplier.class to org/valkyrienskies/buggy/registry/RegistrySupplier.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4a286e0f
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4da5f244
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/RegistrySupplier with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/RegistrySupplier in 33.27 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1.class to org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/RegistrySupplier in 29.58 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$EMMITINGBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$EMMITINGBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@60a53e5a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2ac3f6d9
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$BASIC_SEAT$1 in 37.39 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/seats/SeatBlock.class to org/valkyrienskies/buggy/blocks/seats/SeatBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$EMMITINGBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$EMMITINGBLOCK$1 in 32.14 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/EmmitingNodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/EmmitingNodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@450f0562
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6b15b433
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/seats/SeatBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/seats/SeatBlock in 37.24 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/INodeBlock.class to org/valkyrienskies/buggy/nodes/INodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/EmmitingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/EmmitingNodeBlock in 29.09 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/NodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/NodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2df7aa9a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@464934e5
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/INodeBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/INodeBlock in 46.00 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/Node.class to org/valkyrienskies/buggy/nodes/Node.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@b45b523
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/Node with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/Node in 79.22 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1.class to org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6c5d0352
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$BASIC_ENGINE$1 in 40.81 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/motors/EngineBlock.class to org/valkyrienskies/buggy/blocks/motors/EngineBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@777a9520
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/motors/EngineBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/motors/EngineBlock in 39.80 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$BEARING$1.class to org/valkyrienskies/buggy/BuggyBlocks$BEARING$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3aca71be
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BEARING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$BEARING$1 in 38.23 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock.class to org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@55afd824
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/bearings/BearingBaseBlock in 45.85 ms
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/NodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/NodeBlock in 32.65 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/RotShapes.class to org/valkyrienskies/buggy/util/RotShapes.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2423cde9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2400e834
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShapes with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShapes in 52.05 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShapes in 36.38 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/RotShapes$Box.class to org/valkyrienskies/buggy/util/RotShapes$Box.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@77b90cb5
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@8dad3a0
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShapes$Box with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShapes$Box in 62.44 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShapes$Box in 36.62 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/RotShape.class to org/valkyrienskies/buggy/util/RotShape.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@213ffb43
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@9b309fa
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShape with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShape in 42.51 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShape in 36.55 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/DirectionalShape.class to org/valkyrienskies/buggy/util/DirectionalShape.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@716ae990
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@428f69fb
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/DirectionalShape in 44.88 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/DirectionalShape in 34.31 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/DirectionalShape$Companion.class to org/valkyrienskies/buggy/util/DirectionalShape$Companion.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3ae9be8b
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5b82ae1b
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/DirectionalShape$Companion in 42.93 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/DirectionalShape$Companion in 34.57 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/RotShape$DefaultImpls.class to org/valkyrienskies/buggy/util/RotShape$DefaultImpls.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5374d341
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@22797623
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/RotShape$DefaultImpls with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShape$DefaultImpls in 42.37 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$SPRING$1.class to org/valkyrienskies/buggy/BuggyBlocks$SPRING$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4e14413c
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SPRING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$SPRING$1 in 47.30 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/springs/SpringBaseBlock.class to org/valkyrienskies/buggy/blocks/springs/SpringBaseBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1398c9e4
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/springs/SpringBaseBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/springs/SpringBaseBlock in 33.49 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/INoCollision.class to org/valkyrienskies/buggy/blocks/INoCollision.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5436da31
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/INoCollision with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/INoCollision in 38.63 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$MECHANICAL_TOP$1.class to org/valkyrienskies/buggy/BuggyBlocks$MECHANICAL_TOP$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@768f6581
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$MECHANICAL_TOP$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$MECHANICAL_TOP$1 in 33.60 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/MechanicalTopBlock.class to org/valkyrienskies/buggy/blocks/MechanicalTopBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@52b740ee
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/MechanicalTopBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/MechanicalTopBlock in 36.75 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1.class to org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5fb4a5d5
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$BASIC_TREAD$1 in 44.70 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/movement/TreadBlock.class to org/valkyrienskies/buggy/blocks/movement/TreadBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@37ccd37
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/movement/TreadBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/movement/TreadBlock in 48.73 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$EMMITOR$1.class to org/valkyrienskies/buggy/BuggyBlocks$EMMITOR$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2d8bef44
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$EMMITOR$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$EMMITOR$1 in 35.34 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/PowerEmitBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/PowerEmitBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1664ad3f
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/PowerEmitBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/PowerEmitBlock in 38.39 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/types/basic/EmitterNode.class to org/valkyrienskies/buggy/nodes/types/basic/EmitterNode.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7c48f8b2
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/basic/EmitterNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/types/basic/EmitterNode in 33.37 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$WEAKEMMITOR$1.class to org/valkyrienskies/buggy/BuggyBlocks$WEAKEMMITOR$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7bd495a7
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$WEAKEMMITOR$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$WEAKEMMITOR$1 in 33.87 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/NodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/NodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5270b6f0
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/NodeBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/NodeBlock in 36.82 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$SWITCH$1.class to org/valkyrienskies/buggy/BuggyBlocks$SWITCH$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@556f9c1b
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SWITCH$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$SWITCH$1 in 40.47 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/SwitchEmitBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/SwitchEmitBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1792c85c
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/SwitchEmitBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/SwitchEmitBlock in 44.00 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1e07a7e8
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1 in 33.71 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/DisplayBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/DisplayBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@32fc614a
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/DisplayBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/DisplayBlock in 33.48 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/types/basic/DisplayNode.class to org/valkyrienskies/buggy/nodes/types/basic/DisplayNode.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6ac0281b
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/basic/DisplayNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/types/basic/DisplayNode in 36.78 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/RotShape$DefaultImpls in 33.61 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@31ac9987
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@299b0ffd
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1 in 36.47 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/arithmetic/AddingBlock.class to org/valkyrienskies/buggy/blocks/nodes/arithmetic/AddingBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$ADDINGBLOCK$1 in 34.24 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/AddingNodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/AddingNodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5c57bfb0
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5e1077bb
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/arithmetic/AddingBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/arithmetic/AddingBlock in 42.24 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/types/arithmetic/AddingNode.class to org/valkyrienskies/buggy/nodes/types/arithmetic/AddingNode.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/AddingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/AddingNodeBlock in 34.70 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTINGBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTINGBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@11b9aba9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2a17ac00
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/AddingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/types/arithmetic/AddingNode in 34.37 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTINGBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTINGBLOCK$1 in 36.16 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/SubtractingNodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/SubtractingNodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@41138c75
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@64b0917d
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$SUBTRACTBLOCK$1 in 32.82 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/SubtractingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/SubtractingNodeBlock in 30.63 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYINGBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYINGBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@122dd0e5
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4b6122b3
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYBLOCK$1 in 32.68 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/arithmetic/MultiplyingBlock.class to org/valkyrienskies/buggy/blocks/nodes/arithmetic/MultiplyingBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYINGBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$MULTIPLYINGBLOCK$1 in 30.52 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/MultiplyingNodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/MultiplyingNodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@48678089
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@28db3765
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/arithmetic/MultiplyingBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/arithmetic/MultiplyingBlock in 32.11 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/types/arithmetic/MultiplyingNode.class to org/valkyrienskies/buggy/nodes/types/arithmetic/MultiplyingNode.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/MultiplyingNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/MultiplyingNodeBlock in 30.95 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@40e12391
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@145d9978
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/MultiplyingNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/types/arithmetic/MultiplyingNode in 32.69 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$INVERTINGBLOCK$1.class to org/valkyrienskies/buggy/BuggyBlocks$INVERTINGBLOCK$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$DISPLAYBLOCK$1 in 33.32 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/basic/DisplayNodeBlock.class to org/valkyrienskies/buggy/blocks/nodes/basic/DisplayNodeBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@470fc8d
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@8ff10c7
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$INVERTINGBLOCK$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$INVERTINGBLOCK$1 in 40.59 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/nodes/arithmetic/InvertingBlock.class to org/valkyrienskies/buggy/blocks/nodes/arithmetic/InvertingBlock.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4d55027a
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/arithmetic/InvertingBlock with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/arithmetic/InvertingBlock in 29.63 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/nodes/types/arithmetic/InvertNode.class to org/valkyrienskies/buggy/nodes/types/arithmetic/InvertNode.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3ee7631d
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/nodes/types/arithmetic/InvertNode with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/nodes/types/arithmetic/InvertNode in 32.63 ms
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/nodes/basic/DisplayNodeBlock with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/nodes/basic/DisplayNodeBlock in 30.55 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlockEntities.class to org/valkyrienskies/buggy/BuggyBlockEntities.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@36040772
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@61948c49
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities in 32.88 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_SEAT$1.class to org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_SEAT$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@36b54ff
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_SEAT$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_SEAT$1 in 35.72 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blockentity/seat/SeatBlockEntity.class to org/valkyrienskies/buggy/blockentity/seat/SeatBlockEntity.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@18650e7a
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/seat/SeatBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blockentity/seat/SeatBlockEntity in 47.42 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlockEntities$byName$1.class to org/valkyrienskies/buggy/BuggyBlockEntities$byName$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6828700d
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$byName$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities$byName$1 in 38.29 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_ENGINE$1.class to org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_ENGINE$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5093fecf
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_ENGINE$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities$BASIC_ENGINE$1 in 36.36 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blockentity/motors/EngineBlockEntity.class to org/valkyrienskies/buggy/blockentity/motors/EngineBlockEntity.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@77c1c3b9
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/motors/EngineBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blockentity/motors/EngineBlockEntity in 45.23 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlockEntities$BEARING$1.class to org/valkyrienskies/buggy/BuggyBlockEntities$BEARING$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4f2f166
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$BEARING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities$BEARING$1 in 34.55 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blockentity/bearing/BearingBlockEntity.class to org/valkyrienskies/buggy/blockentity/bearing/BearingBlockEntity.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7bea8028
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/bearing/BearingBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blockentity/bearing/BearingBlockEntity in 35.07 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlockEntities$SPRING$1.class to org/valkyrienskies/buggy/BuggyBlockEntities$SPRING$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1a12c2d6
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlockEntities$SPRING$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities$SPRING$1 in 40.40 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blockentity/springs/SpringBlockEntity.class to org/valkyrienskies/buggy/blockentity/springs/SpringBlockEntity.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3b98c38f
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blockentity/springs/SpringBlockEntity with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blockentity/springs/SpringBlockEntity in 56.93 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlockEntities in 29.18 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyItems.class to org/valkyrienskies/buggy/BuggyItems.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@396f1f9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@746640b9
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems in 51.60 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems in 28.94 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/registry/CreativeTabs.class to org/valkyrienskies/buggy/registry/CreativeTabs.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@31f8f123
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@69a19db0
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/CreativeTabs with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/CreativeTabs in 35.33 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/CreativeTabs in 30.73 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/registry/CreativeTabs$Companion.class to org/valkyrienskies/buggy/registry/CreativeTabs$Companion.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6fd87c61
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7c3f9a86
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/registry/CreativeTabs$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/CreativeTabs$Companion in 37.90 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/registry/CreativeTabs$Companion in 28.33 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyItems$TAB$1.class to org/valkyrienskies/buggy/BuggyItems$TAB$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6b0dba59
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@775806a6
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$TAB$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems$TAB$1 in 35.72 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems$TAB$1 in 29.00 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/services/BuggyPlatformHelper.class to org/valkyrienskies/buggy/services/BuggyPlatformHelper.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5876a03a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@ab72818
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/services/BuggyPlatformHelper with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/services/BuggyPlatformHelper in 66.22 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/services/BuggyPlatformHelper in 28.61 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1.class to org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4d93380c
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1dfb8cdc
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1 in 59.06 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems$TOOL_CONNECTOR$1 in 28.59 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/items/tools/ConnectorItem.class to org/valkyrienskies/buggy/items/tools/ConnectorItem.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5f209ef1
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@4ec82e9c
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/items/tools/ConnectorItem with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/items/tools/ConnectorItem in 56.24 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/items/tools/ConnectorItem in 30.45 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyItems$NODE_TAB$1.class to org/valkyrienskies/buggy/BuggyItems$NODE_TAB$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3740feae
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5b61c505
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyItems$NODE_TAB$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems$NODE_TAB$1 in 57.56 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyItems$NODE_TAB$1 in 30.67 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1.class to org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@22970289
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@bbd784e
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1 in 57.76 ms
-[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$2.class to org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$2.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
-[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@511ec757
-[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
-[Architectury Transformer DEBUG] Remapping Classes:
-[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
-[Architectury Transformer DEBUG] Found class transformer
-[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$2 with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$2 in 52.33 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyBlocks$registerItems$1$1 in 31.31 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyScreens.class to org/valkyrienskies/buggy/BuggyScreens.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@461ae329
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@571e31af
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyScreens with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyScreens in 36.43 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyScreens in 31.19 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyEntities.class to org/valkyrienskies/buggy/BuggyEntities.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@43639de
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@658af5c1
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyEntities with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyEntities in 38.98 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyEntities in 29.62 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyWeights.class to org/valkyrienskies/buggy/BuggyWeights.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7ddee519
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1669f4dd
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyWeights with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyWeights in 34.76 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyWeights in 30.73 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyConfig.class to org/valkyrienskies/buggy/BuggyConfig.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@10ef397f
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@19c1ba6a
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyConfig in 33.27 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyConfig in 31.76 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyConfig$Client.class to org/valkyrienskies/buggy/BuggyConfig$Client.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3a2a5efc
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@3d29fbca
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig$Client with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyConfig$Client in 43.80 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyConfig$Client in 33.02 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyConfig$Server.class to org/valkyrienskies/buggy/BuggyConfig$Server.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5723148f
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@6759c673
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyConfig$Server with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyConfig$Server in 37.81 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyConfig$Server in 32.41 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyClientScreens.class to org/valkyrienskies/buggy/BuggyClientScreens.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@18eae66d
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@514e85ec
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyClientScreens with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyClientScreens in 41.50 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyClientScreens in 50.20 ms
 [Architectury Transformer DEBUG] Transforming from de/m_marvin/industria/core/physics/engine/commands/ShipCommand.class to de/m_marvin/industria/core/physics/engine/commands/ShipCommand.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@219896d8
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@65fbb5f5
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/commands/ShipCommand with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed de/m_marvin/industria/core/physics/engine/commands/ShipCommand in 56.30 ms
+[Architectury Transformer DEBUG] Transformed de/m_marvin/industria/core/physics/engine/commands/ShipCommand in 51.09 ms
 [Architectury Transformer DEBUG] Transforming from de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument.class to de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@577ecfb7
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@2c9f522a
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument in 48.58 ms
+[Architectury Transformer DEBUG] Transformed de/m_marvin/industria/core/physics/engine/commands/ShipIdArgument in 39.96 ms
 [Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/util/DirectionalShape$WhenMappings.class to org/valkyrienskies/buggy/util/DirectionalShape$WhenMappings.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7bd67c2a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@7a6613b0
 [Architectury Transformer DEBUG] Remapping with Dirty Mappings...
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/util/DirectionalShape$WhenMappings with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/DirectionalShape$WhenMappings in 38.35 ms
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/util/DirectionalShape$WhenMappings in 30.76 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/blocks/INoCollision.class to org/valkyrienskies/buggy/blocks/INoCollision.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@42afe05e
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/blocks/INoCollision with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/blocks/INoCollision in 51.12 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/Link.class to org/valkyrienskies/buggy/PAL/Link.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@34bfb6dc
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/Link with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/Link in 32.56 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PinType.class to org/valkyrienskies/buggy/PAL/PinType.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@5c40cf82
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PinType with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PinType in 44.98 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/PAL/PALNetwork$1.class to org/valkyrienskies/buggy/PAL/PALNetwork$1.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@272fc184
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/PAL/PALNetwork$1 with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/PAL/PALNetwork$1 in 34.87 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/api/extension/Vec3dExtensionKt.class to org/valkyrienskies/buggy/api/extension/Vec3dExtensionKt.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@472e51aa
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/api/extension/Vec3dExtensionKt with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/api/extension/Vec3dExtensionKt in 34.23 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyDebugHelper.class to org/valkyrienskies/buggy/BuggyDebugHelper.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@1f9b2c8
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyDebugHelper with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyDebugHelper in 29.68 ms
+[Architectury Transformer DEBUG] Transforming from org/valkyrienskies/buggy/BuggyDebugHelper$Companion.class to org/valkyrienskies/buggy/BuggyDebugHelper$Companion.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables$$Lambda$105/0x0000000800c34f78@f1a1b24
+[Architectury Transformer DEBUG] Remapping with Dirty Mappings...
+[Architectury Transformer DEBUG] Remapping Classes:
+[Architectury Transformer DEBUG] dev/architectury/injectables/targets/ArchitecturyTarget -> architectury_inject_vsBuggymod_fabric_408ebf72dc4c4a61b7f291bd361f94ac_8ad8f0625f4bd8de42b953995ec25635c1be1ae3ee09ae49d8c5285a6a3d667bbuggy100beta1devjar/PlatformMethods
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing org/valkyrienskies/buggy/BuggyDebugHelper$Companion with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed org/valkyrienskies/buggy/BuggyDebugHelper$Companion in 31.02 ms
