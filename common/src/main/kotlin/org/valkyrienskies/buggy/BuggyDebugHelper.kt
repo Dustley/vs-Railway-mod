@@ -19,7 +19,6 @@ class BuggyDebugHelper {
 
         fun addConstantDebugLine( p1 : Vec3d, p2 : Vec3d, color: Vec4i) {
             debugLines.add(Triple(p1, p2, color))
-            println("Added constant debug line from: $p1 to: $p2!")
         }
 
         fun addConstantDebugBox( center : Vec3d, sideLength: Double, color: Vec4i) {
@@ -57,7 +56,6 @@ class BuggyDebugHelper {
             for (edge in edges) {
                 addConstantDebugLine(edge.first, edge.second, color)
             }
-            println("Added constant debug Box from: $center with size: $sideLength!")
         }
 
         fun addConstantDebugArrow(start: Vec3d, end: Vec3d, arrowLength: Double, arrowAngle: Double, color: Vec4i) {
@@ -69,7 +67,7 @@ class BuggyDebugHelper {
             val arrowDirection = end.sub(start).normalize()
             val arrowTip = end.sub(arrowDirection.mul(arrowLength))
             val arrowSide1 = arrowDirection.cross(Vec3d(0.0, 1.0, 0.0)).normalize()
-            val arrowSide2 = arrowDirection.cross(arrowSide1).normalize()
+            val arrowSide2 = arrowDirection.cross(Vec3d(0.0, -1.0, 0.0)).normalize()
             val arrowBase1 = arrowTip.add(arrowSide1.mul(arrowLength * arrowAngle))
             val arrowBase2 = arrowTip.add(arrowSide2.mul(arrowLength * arrowAngle))
             addConstantDebugLine(end, arrowBase1, color)
@@ -79,9 +77,66 @@ class BuggyDebugHelper {
 
         }
 
+        fun addTickDebugBox( center : Vec3d, sideLength: Double, ticks : Int, color: Vec4i) {
+            val halfSideLength = sideLength / 2.0
+
+            // Define the eight vertices of the cube
+            val vertices = listOf(
+                center.add(Vec3d(-halfSideLength, -halfSideLength, halfSideLength)),
+                center.add(Vec3d(-halfSideLength, halfSideLength, halfSideLength)),
+                center.add(Vec3d(halfSideLength, halfSideLength, halfSideLength)),
+                center.add(Vec3d(halfSideLength, -halfSideLength, halfSideLength)),
+                center.add(Vec3d(-halfSideLength, -halfSideLength, -halfSideLength)),
+                center.add(Vec3d(-halfSideLength, halfSideLength, -halfSideLength)),
+                center.add(Vec3d(halfSideLength, halfSideLength, -halfSideLength)),
+                center.add(Vec3d(halfSideLength, -halfSideLength, -halfSideLength))
+            )
+
+            // Define the twelve edges of the cube by connecting its vertices
+            val edges = listOf(
+                Pair(vertices[0], vertices[1]),
+                Pair(vertices[1], vertices[2]),
+                Pair(vertices[2], vertices[3]),
+                Pair(vertices[3], vertices[0]),
+                Pair(vertices[4], vertices[5]),
+                Pair(vertices[5], vertices[6]),
+                Pair(vertices[6], vertices[7]),
+                Pair(vertices[7], vertices[4]),
+                Pair(vertices[0], vertices[4]),
+                Pair(vertices[1], vertices[5]),
+                Pair(vertices[2], vertices[6]),
+                Pair(vertices[3], vertices[7])
+            )
+
+            // Draw each edge of the cube
+            for (edge in edges) {
+                addTickDebugLine(edge.first, edge.second, ticks, color)
+            }
+        }
+
+        fun addTickDebugPyramid(center: Vec3d, direction: Vec3d, ticks : Int, color: Vec4i) {
+            // Define the vertices of the pyramid
+            val apex = center.add(direction)
+            val baseVertex1 = Vec3d(center.x + 1.0, center.y, center.z)
+            val baseVertex2 = Vec3d(center.x, center.y + 1.0, center.z)
+            val baseVertex3 = Vec3d(center.x - 1.0, center.y, center.z)
+            val baseVertex4 = Vec3d(center.x, center.y - 1.0, center.z)
+
+            // Draw the base of the pyramid
+            addTickDebugLine(baseVertex1, baseVertex2, ticks, color)
+            addTickDebugLine(baseVertex2, baseVertex3, ticks, color)
+            addTickDebugLine(baseVertex3, baseVertex4, ticks, color)
+            addTickDebugLine(baseVertex4, baseVertex1, ticks, color)
+
+            // Draw the lines from the apex to the base vertices
+            addTickDebugLine(apex, baseVertex1, ticks, color)
+            addTickDebugLine(apex, baseVertex2, ticks, color)
+            addTickDebugLine(apex, baseVertex3, ticks, color)
+            addTickDebugLine(apex, baseVertex4, ticks, color)
+        }
+
         fun addTickDebugLine( p1 : Vec3d, p2 : Vec3d, ticks : Int, color: Vec4i) {
             tickDebugLines.add(Quadruple(p1, p2, ticks, color))
-            println("Added tick debug line from: $p1 to: $p2 for $ticks ticks!")
         }
 
         fun addTickedIDDebugLine( p1 : Vec3d, p2 : Vec3d, ticks : Int, id : Int, color: Vec4i) {
@@ -159,7 +214,7 @@ class BuggyDebugHelper {
                 }
             } catch (e : Exception) {}
 
-            println("query ${lines.size} total lines")
+            //println("query ${lines.size} total lines")
 
             return lines
         }

@@ -2,6 +2,21 @@
   "$schema" : "https://json-schema.org/draft/2019-09/schema",
   "type" : "object",
   "properties" : {
+    "BaseEmmition" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The Value emmitors and switches use"
+    },
+    "HammerForce" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "how much force a hammer will apply"
+    },
+    "SpeedCutoff" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The Force a Tread will output when moving"
+    },
     "TreadClimb" : {
       "type" : "number",
       "format" : "double",

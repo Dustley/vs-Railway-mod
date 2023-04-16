@@ -69,7 +69,7 @@ glDebugVerbosity:1
 skipMultiplayerWarning:true
 skipRealms32bitWarning:false
 hideMatchedNames:true
-joinedFirstServer:false
+joinedFirstServer:true
 hideBundleTutorial:false
 syncChunkWrites:true
 showAutosaveIndicator:true
@@ -110,9 +110,9 @@ key_key.hotbar.8:key.mouse.5
 key_key.hotbar.9:key.mouse.4
 key_key.valkyrienskies.ship_down:key.keyboard.v
 key_key.valkyrienskies.ship_cruise:key.keyboard.c
-key_key.modmenu.open_menu:key.keyboard.unknown
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
+key_key.modmenu.open_menu:key.keyboard.unknown
 soundCategory_master:0.5033113
 soundCategory_music:0.0
 soundCategory_record:1.0

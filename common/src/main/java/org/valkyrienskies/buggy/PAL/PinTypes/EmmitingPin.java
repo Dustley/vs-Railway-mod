@@ -1,5 +1,6 @@
 package org.valkyrienskies.buggy.PAL.PinTypes;
 
+import org.valkyrienskies.buggy.BuggyConfig;
 import org.valkyrienskies.buggy.PAL.Pin;
 
 public class EmmitingPin extends Pin {
@@ -9,6 +10,6 @@ public class EmmitingPin extends Pin {
 
     @Override
     public void updateValue() {
-        this.setValue(1.0);
+        this.setValue(BuggyConfig.SERVER.getBaseEmmition());
     }
 }

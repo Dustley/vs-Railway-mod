@@ -7,10 +7,24 @@ public class MultiplyingPin extends Pin {
         super(id);
     }
 
+    private Boolean isO = false;
+
+    @Override
+    public void updateValue() {
+        if (this.isO) {
+            this.setValue(0.0);
+        } else {
+            this.setValue(this.getStoredValue());
+        }
+        this.isO = false;
+        this.setStoredValue(0.0);
+    }
+
     @Override
     public void calcValue(Double inValue){
-        Double tempStore = 1.0;
-        if(this.getStoredValue() != 0.0) tempStore = this.getStoredValue() * inValue;
-        this.setStoredValue(tempStore);
+        if(this.getStoredValue() == 0.0) { this.setStoredValue(1.0); }
+        this.setStoredValue( this.getStoredValue() * inValue );
+
+        if(inValue == 0.0) {this.isO = true;}
     }
 }

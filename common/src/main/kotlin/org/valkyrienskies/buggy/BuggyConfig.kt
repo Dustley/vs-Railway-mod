@@ -9,9 +9,22 @@ object BuggyConfig {
     @JvmField
     val SERVER = Server()
 
-    class Client
+    class Client {
+        @JsonSchema(description = "should lines and boxes draw, THIS IS MOSTLY NON FUNCTIONAL")
+        var DebugRenderer = true
+
+    }
 
     class Server {
+
+        @JsonSchema(description = "The Value emmitors and switches use")
+        var BaseEmmition = 2.0
+
+        @JsonSchema(description = "how much force a hammer will apply")
+        var HammerForce = 1000000.0
+
+        @JsonSchema(description = "The Force a Tread will output when moving")
+        var SpeedCutoff = 5000.0
 
         @JsonSchema(description = "The Force a Tread will output when moving")
         var TreadSpeed = 5000.0

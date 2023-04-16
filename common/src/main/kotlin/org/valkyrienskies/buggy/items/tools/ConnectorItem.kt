@@ -76,10 +76,10 @@ class ConnectorItem : Item(
                 val A = clickedPosA!!.add(Vector3d(0.5), Vector3d())
                 val B = clickedPosB!!.add(Vector3d(0.5), Vector3d())
 
-                //BuggyDebugHelper.addConstantDebugLine(Vec3d(A), Vec3d(B), Vec4i(0,255,0,255))
+                BuggyDebugHelper.addConstantDebugLine(Vec3d(A), Vec3d(B), Vec4i(0,255,0,127))
                 val dir:Vector3d = clickedPosB!!.sub(clickedPosA, Vector3d()).normalize()
 
-                BuggyDebugHelper.addConstantDebugArrow(Vec3d( A.add(dir.mul( 1.5, Vector3d()), Vector3d())), Vec3d( B.add(dir.mul(-1.5, Vector3d()), Vector3d())), 0.5, 0.25,  Vec4i(255,0,255,155))
+                BuggyDebugHelper.addConstantDebugArrow(Vec3d( A.add(dir.mul( 1.5, Vector3d()), Vector3d())), Vec3d( B.add(dir.mul(-1.5, Vector3d()), Vector3d())), 0.1, 0.25,  Vec4i(255,0,255,155))
                 BuggyDebugHelper.addConstantDebugBox(Vec3d( A.add(dir.mul( 0.75, Vector3d()), Vector3d())), 0.25, Vec4i(255,0,0,255))
                 BuggyDebugHelper.addConstantDebugBox(Vec3d( B.add(dir.mul(-0.75, Vector3d()), Vector3d())), 0.25, Vec4i(0,0,255,255))
             }
