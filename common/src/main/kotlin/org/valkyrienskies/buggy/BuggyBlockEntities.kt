@@ -8,16 +8,17 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.entity.BlockEntity
 import net.minecraft.world.level.block.entity.BlockEntityType
 import net.minecraft.world.level.block.state.BlockState
-import org.valkyrienskies.buggy.blocks.nodes.basic.EmitterNodeBlockEntity
+import org.valkyrienskies.buggy.blocks.nodes.basic.display.DisplayNodeBlockEntity
+import org.valkyrienskies.buggy.blocks.nodes.basic.emitter.EmitterNodeBlockEntity
 import org.valkyrienskies.buggy.registry.DeferredRegister
 import org.valkyrienskies.buggy.registry.RegistrySupplier
-import kotlin.reflect.KFunction3
 
 @Suppress("unused")
 object BuggyBlockEntities {
     private val BLOCKENTITIES = DeferredRegister.create(BuggyMod.MOD_ID, Registry.BLOCK_ENTITY_TYPE_REGISTRY)
 
     val EMITTER_BLOCK = BuggyBlocks.EMITTER_BLOCK withBE ::EmitterNodeBlockEntity byName "emitter"
+    val DISPLAY_BLOCK = BuggyBlocks.DISPLAY_BLOCK withBE ::DisplayNodeBlockEntity byName "display"
 
     fun register() {
         BLOCKENTITIES.applyAll()

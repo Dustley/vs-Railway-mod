@@ -8,8 +8,14 @@ public class DisplayPin extends Pin {
     }
 
     @Override
+    public void calcValue(Double inValue){
+        this.setStoredValue( inValue ); // would be for adding node -> this.setStoredValue( this.storedValue + inValue );
+        System.out.println(inValue);
+    }
+
+    @Override
     public void updateValue() {
         super.updateValue();
-        System.out.println(this.getValue());
+        //System.out.println(this.getValue());
     }
 }

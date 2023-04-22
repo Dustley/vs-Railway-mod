@@ -33,11 +33,10 @@ public abstract class PALNetworkMixin implements PALNetworkDuck {
         network.tick();
         offset++;
         if(offset >= 40) {
-            offset = 0;//network.perSecond();}
+            offset = 0;
+            network.perSecond();
         }
     }
-
-
 
     @Override
     public PALNetwork getNetwork() {

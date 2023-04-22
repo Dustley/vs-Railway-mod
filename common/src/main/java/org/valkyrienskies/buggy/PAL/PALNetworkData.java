@@ -14,5 +14,6 @@ public class PALNetworkData implements Serializable {
     public final HashMap<Long, Pin> pins = new HashMap<Long, Pin>();
     public final HashMap<Long, Link> links = new HashMap<Long, Link>();
     public final HashMap<BlockPos, Pin> posToPin = new HashMap<BlockPos, Pin>();
+    public final List<Link> tagRemoveLinks = new ArrayList<Link>();
 
 }

@@ -23,7 +23,7 @@ public class PALNetwork{
     private final HashMap<Long, Link> links = NetworkData.links;
     private final HashMap<BlockPos, Pin> posToPin = NetworkData.posToPin;
 
-    private final List<Link> tagRemoveLinks = new ArrayList<Link>();
+    private final List<Link> tagRemoveLinks = NetworkData.tagRemoveLinks;
 
     public Pin addPin(Long id, PinType type) {
         Pin pin = switch (type) {
@@ -80,9 +80,7 @@ public class PALNetwork{
         return nextID;
     }
 
-    public Pin getPinFromId(Long id){
-        return pins.get(id);
-    }
+    public Pin getPinFromId(Long id){ return pins.get(id); }
     public Link getLinkFromId(Long id){
         return links.get(id);
     }
@@ -102,16 +100,19 @@ public class PALNetwork{
     }
     */
 
-    public void removePin(Pin pin){ pins.remove(pin.getId()); }
-    public void removePin(Long id){ pins.remove(id); }
+    public void removePin(Pin pin){ removePin(pin.getId()); }
+    public void removePin(Long id){
+        pins.remove(id);
+    }
 
     public void lateRemoveLink(Link link){ tagRemoveLinks.add(link); }
-    public void removeLink(Link link){ links.remove(link.getId()); }
+    public void removeLink(Link link){ removeLink(link.getId()); }
     public void removeLink(Long id){ links.remove(id); }
 
     public void tick() {
 
         tagRemoveLinks.forEach(this::removeLink);
+        tagRemoveLinks.clear();
 
         links.forEach((id, link) -> {
 
